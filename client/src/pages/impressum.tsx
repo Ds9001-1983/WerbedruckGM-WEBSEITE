@@ -19,9 +19,16 @@ export default function Impressum() {
             <div>
               <h3 className="font-semibold text-dark mb-2">Werbedruck GM</h3>
               <p className="text-gray-600">
-                Musterstraße 123<br />
-                12345 Oberberg<br />
+                c/o Sonja Gerharz Buchhaltungsbüro<br />
+                Alte Landstr. 57<br />
+                51647 Gummersbach<br />
                 Deutschland
+              </p>
+            </div>
+            <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
+              <p className="text-sm text-yellow-800 font-medium">
+                <strong>Beachten Sie, dass wir KEIN Ladenlokal haben</strong><br />
+                Servicezeiten NUR nach Vereinbarung!
               </p>
             </div>
           </CardContent>
@@ -33,33 +40,10 @@ export default function Impressum() {
           </CardHeader>
           <CardContent className="space-y-2">
             <p className="text-gray-600">
-              <strong>Telefon:</strong> +49 (0) 123 456789
+              <strong>Telefon:</strong> 02262-1088
             </p>
             <p className="text-gray-600">
-              <strong>E-Mail:</strong> info@werbedruck-gm.de
-            </p>
-          </CardContent>
-        </Card>
-
-        <Card className="mb-8">
-          <CardHeader>
-            <CardTitle className="text-2xl text-dark">Geschäftsführung</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p className="text-gray-600">Max Mustermann</p>
-          </CardContent>
-        </Card>
-
-        <Card className="mb-8">
-          <CardHeader>
-            <CardTitle className="text-2xl text-dark">Registereintrag</CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-2">
-            <p className="text-gray-600">
-              <strong>Registergericht:</strong> Amtsgericht Köln
-            </p>
-            <p className="text-gray-600">
-              <strong>Registernummer:</strong> HRB 12345
+              <strong>E-Mail:</strong> info@Deine-Werbewerkstatt.de
             </p>
           </CardContent>
         </Card>
@@ -68,23 +52,45 @@ export default function Impressum() {
           <CardHeader>
             <CardTitle className="text-2xl text-dark">Umsatzsteuer</CardTitle>
           </CardHeader>
-          <CardContent>
+          <CardContent className="space-y-2">
             <p className="text-gray-600">
-              <strong>Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:</strong><br />
-              DE123456789
+              <strong>Zuständiges Finanzamt:</strong> Gummersbach
+            </p>
+            <p className="text-gray-600">
+              <strong>Umsatzsteuer-ID:</strong> DE305922495
+            </p>
+            <p className="text-gray-600">
+              <strong>Gerichtsstand:</strong> AG Gummersbach
             </p>
           </CardContent>
         </Card>
 
         <Card className="mb-8">
           <CardHeader>
-            <CardTitle className="text-2xl text-dark">Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</CardTitle>
+            <CardTitle className="text-2xl text-dark">Geschäftstätigkeit</CardTitle>
           </CardHeader>
           <CardContent>
             <p className="text-gray-600">
-              Max Mustermann<br />
-              Musterstraße 123<br />
-              12345 Oberberg
+              Unser Unternehmen beliefert ausschließlich Vereine, Gewerbetreibende und Kapitalgesellschaften - 
+              <strong>keine Privatpersonen</strong>.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card className="mb-8">
+          <CardHeader>
+            <CardTitle className="text-2xl text-dark">Datenschutzbeauftragter</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="text-gray-600">
+              <a href="https://www.sor.de/" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-blue-700 underline">
+                Sven-Oliver Rüsche
+              </a> 
+              {" "}(
+              <a href="https://www.arkm.de/" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-blue-700 underline">
+                ARKM.de
+              </a>
+              )
             </p>
           </CardContent>
         </Card>

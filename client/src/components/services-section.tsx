@@ -67,9 +67,9 @@ export default function ServicesSection() {
                   ))}
                 </ul>
                 <Link href={service.href}>
-                  <a className="text-primary font-semibold hover:text-blue-700 transition-colors">
+                  <span className="text-primary font-semibold hover:text-blue-700 transition-colors cursor-pointer">
                     Mehr erfahren →
-                  </a>
+                  </span>
                 </Link>
               </CardContent>
             </Card>

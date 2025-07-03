@@ -12,10 +12,11 @@ export default function Footer() {
               und Lasergravuren im Oberbergischen. Qualität "MadeInOberberg" vom Meister.
             </p>
             <div className="text-gray-300">
-              <p>Musterstraße 123</p>
-              <p>12345 Oberberg</p>
-              <p>Tel: +49 (0) 123 456789</p>
-              <p>info@werbedruck-gm.de</p>
+              <p>c/o Sonja Gerharz Buchhaltungsbüro</p>
+              <p>Alte Landstr. 57</p>
+              <p>51647 Gummersbach</p>
+              <p>Tel: 02262-1088</p>
+              <p>info@Deine-Werbewerkstatt.de</p>
             </div>
           </div>
           
@@ -24,22 +25,22 @@ export default function Footer() {
             <ul className="space-y-2 text-gray-300">
               <li>
                 <Link href="/digitaldruck">
-                  <a className="hover:text-white transition-colors">Digitaldruck</a>
+                  <span className="hover:text-white transition-colors cursor-pointer">Digitaldruck</span>
                 </Link>
               </li>
               <li>
                 <Link href="/foliendesign">
-                  <a className="hover:text-white transition-colors">Foliendesign</a>
+                  <span className="hover:text-white transition-colors cursor-pointer">Foliendesign</span>
                 </Link>
               </li>
               <li>
                 <Link href="/textilveredelung">
-                  <a className="hover:text-white transition-colors">Textilveredelung</a>
+                  <span className="hover:text-white transition-colors cursor-pointer">Textilveredelung</span>
                 </Link>
               </li>
               <li>
                 <Link href="/lasergravuren">
-                  <a className="hover:text-white transition-colors">Lasergravuren</a>
+                  <span className="hover:text-white transition-colors cursor-pointer">Lasergravuren</span>
                 </Link>
               </li>
             </ul>
@@ -50,12 +51,12 @@ export default function Footer() {
             <ul className="space-y-2 text-gray-300">
               <li>
                 <Link href="/impressum">
-                  <a className="hover:text-white transition-colors">Impressum</a>
+                  <span className="hover:text-white transition-colors cursor-pointer">Impressum</span>
                 </Link>
               </li>
               <li>
                 <Link href="/datenschutz">
-                  <a className="hover:text-white transition-colors">Datenschutz</a>
+                  <span className="hover:text-white transition-colors cursor-pointer">Datenschutz</span>
                 </Link>
               </li>
             </ul>

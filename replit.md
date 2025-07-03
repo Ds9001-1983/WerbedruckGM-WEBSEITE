@@ -105,5 +105,8 @@ Preferred communication style: Simple, everyday language.
 
 ## Changelog
 
-Changelog:
+Recent Changes:
 - July 03, 2025. Initial setup
+- July 03, 2025. Updated Impressum page with authentic company information from original website
+- July 03, 2025. Updated contact information across all pages to match legal details
+- July 03, 2025. Fixed React navigation warnings by replacing nested anchor tags with span elements

@@ -90,9 +90,13 @@ export default function Contact() {
                   <div>
                     <h3 className="text-lg font-semibold text-dark mb-1">Adresse</h3>
                     <p className="text-gray-600">
-                      Musterstraße 123<br />
-                      12345 Oberberg<br />
+                      c/o Sonja Gerharz Buchhaltungsbüro<br />
+                      Alte Landstr. 57<br />
+                      51647 Gummersbach<br />
                       Deutschland
+                    </p>
+                    <p className="text-sm text-yellow-700 mt-2">
+                      <strong>Kein Ladenlokal - Termine nur nach Vereinbarung!</strong>
                     </p>
                   </div>
                 </div>
@@ -103,7 +107,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-dark mb-1">Telefon</h3>
-                    <p className="text-gray-600">+49 (0) 123 456789</p>
+                    <p className="text-gray-600">02262-1088</p>
                   </div>
                 </div>
                 
@@ -113,7 +117,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-dark mb-1">E-Mail</h3>
-                    <p className="text-gray-600">info@werbedruck-gm.de</p>
+                    <p className="text-gray-600">info@Deine-Werbewerkstatt.de</p>
                   </div>
                 </div>
 
@@ -141,7 +145,7 @@ export default function Contact() {
               <CardContent className="space-y-4">
                 <Button 
                   className="w-full justify-start bg-primary hover:bg-blue-700 text-white"
-                  onClick={() => window.open('tel:+491234567890')}
+                  onClick={() => window.open('tel:022621088')}
                 >
                   <Phone className="mr-2 h-4 w-4" />
                   Jetzt anrufen
@@ -149,7 +153,7 @@ export default function Contact() {
                 <Button 
                   variant="outline" 
                   className="w-full justify-start text-primary border-primary hover:bg-primary hover:text-white"
-                  onClick={() => window.open('mailto:info@werbedruck-gm.de')}
+                  onClick={() => window.open('mailto:info@Deine-Werbewerkstatt.de')}
                 >
                   <Mail className="mr-2 h-4 w-4" />
                   E-Mail senden

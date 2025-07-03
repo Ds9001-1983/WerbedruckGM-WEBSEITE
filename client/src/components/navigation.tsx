@@ -34,14 +34,14 @@ export default function Navigation() {
             <div className="ml-10 flex items-baseline space-x-4">
               {navItems.map((item) => (
                 <Link key={item.href} href={item.href}>
-                  <a className={cn(
-                    "px-3 py-2 text-sm font-medium transition-colors",
+                  <span className={cn(
+                    "px-3 py-2 text-sm font-medium transition-colors cursor-pointer",
                     location === item.href
                       ? "text-primary" 
                       : "text-gray-600 hover:text-primary"
                   )}>
                     {item.label}
-                  </a>
+                  </span>
                 </Link>
               ))}
               <Link href="/kontakt">
@@ -72,9 +72,9 @@ export default function Navigation() {
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-gray-50">
             {navItems.map((item) => (
               <Link key={item.href} href={item.href}>
-                <a 
+                <span 
                   className={cn(
-                    "block px-3 py-2 text-base font-medium",
+                    "block px-3 py-2 text-base font-medium cursor-pointer",
                     location === item.href
                       ? "text-primary" 
                       : "text-gray-600 hover:text-primary"
@@ -82,16 +82,16 @@ export default function Navigation() {
                   onClick={() => setIsOpen(false)}
                 >
                   {item.label}
-                </a>
+                </span>
               </Link>
             ))}
             <Link href="/kontakt">
-              <a 
-                className="block px-3 py-2 text-base font-medium text-gray-600 hover:text-primary"
+              <span 
+                className="block px-3 py-2 text-base font-medium text-gray-600 hover:text-primary cursor-pointer"
                 onClick={() => setIsOpen(false)}
               >
                 Kontakt
-              </a>
+              </span>
             </Link>
           </div>
         </div>
