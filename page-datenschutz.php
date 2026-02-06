@@ -44,10 +44,17 @@ get_header();
                 Alte Landstr. 57<br>
                 51647 Gummersbach<br>
                 Telefon: 02262-1088<br>
-                E-Mail: info@Deine-Werbewerkstatt.de
+                E-Mail: info@werbedruck-gm.de
             </p>
 
-            <h2>4. Datenerfassung auf dieser Website</h2>
+            <h2>4. Cookies und Einwilligung</h2>
+            <p>
+                Soweit eine Einwilligung für den Einsatz von Cookies oder vergleichbaren Technologien erforderlich ist, 
+                erfolgt die Verarbeitung ausschließlich auf Grundlage von § 25 Abs. 1 TDDDG (Telekommunikation-Digitale-Dienste-Datenschutz-Gesetz) 
+                i.V.m. Art. 6 Abs. 1 lit. a DSGVO. Die Einwilligung ist jederzeit widerrufbar.
+            </p>
+
+            <h2>5. Datenerfassung auf dieser Website</h2>
             <h3>Kontaktformular</h3>
             <p>
                 Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular 
@@ -62,7 +69,7 @@ get_header();
                 Betriebssystem, Referrer URL, Hostname des zugreifenden Rechners, Uhrzeit der Serveranfrage und IP-Adresse.
             </p>
 
-            <h2>5. Ihre Rechte</h2>
+            <h2>6. Ihre Rechte</h2>
             <p>
                 Sie haben jederzeit das Recht unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer 
                 gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht, die Berichtigung, 
@@ -74,7 +81,7 @@ get_header();
                 Aufsichtsbehörde zu.
             </p>
 
-            <h2>6. Widerspruch gegen Werbe-Mails</h2>
+            <h2>7. Widerspruch gegen Werbe-Mails</h2>
             <p>
                 Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten zur Übersendung von 
                 nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit widersprochen. 

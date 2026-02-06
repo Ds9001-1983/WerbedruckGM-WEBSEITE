@@ -13,7 +13,7 @@ get_header();
         <div class="legal-content">
             <h1>Impressum</h1>
 
-            <h2>Angaben gemäß § 5 TMG</h2>
+            <h2>Angaben gemäß § 5 DDG</h2>
             <p>
                 <strong>Werbedruck GM</strong><br>
                 Digital- und UV-Druck, Lohndruckerei<br>
@@ -50,7 +50,7 @@ get_header();
                 [USt-IdNr. einfügen]
             </p>
 
-            <h2>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
+            <h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
             <p>
                 Thomas Krüger<br>
                 Quellenweg 6a<br>
@@ -60,7 +60,7 @@ get_header();
             <h2>Streitschlichtung</h2>
             <p>
                 Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: 
-                <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener" style="color: var(--primary);">https://ec.europa.eu/consumers/odr</a>.<br>
+                <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener" style="color: var(--primary); text-decoration: underline; font-weight: 500;">https://ec.europa.eu/consumers/odr/</a>.<br>
                 Unsere E-Mail-Adresse finden Sie oben im Impressum.
             </p>
             <p>
@@ -70,8 +70,8 @@ get_header();
 
             <h2>Haftung für Inhalte</h2>
             <p>
-                Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den 
-                allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht 
+                Als Diensteanbieter sind wir gemäß § 7 Abs. 1 DDG für eigene Inhalte auf diesen Seiten nach den 
+                allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 DDG sind wir als Diensteanbieter jedoch nicht 
                 verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen 
                 zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
             </p>
