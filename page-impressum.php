@@ -15,16 +15,33 @@ get_header();
 
             <h2>Angaben gemäß § 5 TMG</h2>
             <p>
-                Werbedruck GM<br>
-                c/o Sonja Gerharz Buchhaltungsbüro<br>
+                <strong>Werbedruck GM</strong><br>
+                Digital- und UV-Druck, Lohndruckerei<br>
+                Partner des Werbemittelhandels
+            </p>
+            <p>
+                <strong>Inhaber:</strong> Thomas Krüger
+            </p>
+
+            <h2>Werkstatt</h2>
+            <p>
+                Quellenweg 6a<br>
+                51645 Gummersbach
+            </p>
+
+            <h2>Büro / Buchhaltung</h2>
+            <p>
+                c/o Sonja Gerharz<br>
                 Alte Landstr. 57<br>
                 51647 Gummersbach
             </p>
 
             <h2>Kontakt</h2>
             <p>
-                Telefon: 02262-1088<br>
-                E-Mail: info@Deine-Werbewerkstatt.de
+                Mobil: <a href="tel:01605909911" style="color: var(--primary);">0160-5909911</a><br>
+                Festnetz: <a href="tel:022621088" style="color: var(--primary);">02262-1088</a><br>
+                E-Mail: <a href="mailto:info@werbedruck-gm.de" style="color: var(--primary);">info@werbedruck-gm.de</a><br>
+                Web: <a href="https://www.deine-werbewerkstatt.de" target="_blank" style="color: var(--primary);">www.Deine-Werbewerkstatt.de</a>
             </p>
 
             <h2>Umsatzsteuer-ID</h2>
@@ -35,9 +52,9 @@ get_header();
 
             <h2>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
             <p>
-                Werbedruck GM<br>
-                Alte Landstr. 57<br>
-                51647 Gummersbach
+                Thomas Krüger<br>
+                Quellenweg 6a<br>
+                51645 Gummersbach
             </p>
 
             <h2>Streitschlichtung</h2>
@@ -71,6 +88,11 @@ get_header();
                 Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen 
                 Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der 
                 Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
+            </p>
+
+            <h2>Webdesign & Umsetzung</h2>
+            <p>
+                <a href="https://superbrand.marketing" target="_blank" rel="noopener" style="color: var(--primary);">SUPERBRAND.marketing</a> – Dein Superheld für deine Werbung.
             </p>
         </div>
     </div>

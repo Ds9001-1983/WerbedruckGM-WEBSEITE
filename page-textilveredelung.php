@@ -62,13 +62,24 @@ get_header();
             </div>
         </div>
 
+        <!-- Waschanleitung Download -->
+        <div class="download-section">
+            <h3>Waschanleitung für bedruckte Textilien</h3>
+            <p>Um die Langlebigkeit und Farbbrillanz Ihrer bedruckten Textilien zu gewährleisten, beachten Sie bitte unsere Pflegehinweise für Flex-, Flock- und DTF-Druck.</p>
+            <div class="download-list">
+                <a href="<?php echo esc_url( get_template_directory_uri() . '/assets/pdf/WGM-WaschanleitungFlexFlockundDTFDruck.pdf' ); ?>" target="_blank" class="download-item">
+                    <?php echo werbedruck_icon('download'); ?> Waschanleitung herunterladen (PDF)
+                </a>
+            </div>
+        </div>
+
         <!-- CTA -->
-        <div class="cta-box" style="background: rgba(147, 51, 234, 0.1);">
+        <div class="cta-box" style="background: rgba(232, 120, 23, 0.08); border-color: rgba(232, 120, 23, 0.2); margin-top: 2rem;">
             <h3>Individuelle Textilien für Ihr Team</h3>
             <p>Ob Firmenkleidung, Vereinstrikots oder Werbeartikel - wir haben die passende Lösung!</p>
             <div class="cta-buttons">
-                <a href="<?php echo esc_url( home_url( '/kontakt/' ) ); ?>" class="btn btn-purple btn-lg">Kostenloses Angebot erhalten</a>
-                <a href="tel:022621088" class="btn btn-outline-primary btn-lg">02262-1088</a>
+                <a href="<?php echo esc_url( home_url( '/kontakt/' ) ); ?>" class="btn btn-primary btn-lg">Kostenloses Angebot erhalten</a>
+                <a href="tel:01605909911" class="btn btn-outline-primary btn-lg">0160-5909911</a>
             </div>
         </div>
     </div>

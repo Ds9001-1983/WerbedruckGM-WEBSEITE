@@ -63,6 +63,7 @@ function werbedruck_page_templates( $templates ) {
     $templates['page-contact.php']          = 'Kontakt';
     $templates['page-impressum.php']        = 'Impressum';
     $templates['page-datenschutz.php']      = 'Datenschutz';
+    $templates['page-agb.php']               = 'AGB';
     return $templates;
 }
 add_filter( 'theme_page_templates', 'werbedruck_page_templates' );
@@ -129,6 +130,12 @@ function werbedruck_theme_activation() {
             'title'    => 'Datenschutz',
             'slug'     => 'datenschutz',
             'template' => 'page-datenschutz.php',
+            'content'  => '',
+        ),
+        array(
+            'title'    => 'AGB',
+            'slug'     => 'agb',
+            'template' => 'page-agb.php',
             'content'  => '',
         ),
     );
@@ -288,7 +295,7 @@ function werbedruck_setup_page() {
     echo '<hr>';
     echo '<h3>Was wird eingerichtet:</h3>';
     echo '<ul style="list-style: disc; padding-left: 20px;">';
-    echo '<li>9 Seiten mit den richtigen Templates (Startseite, Digitaldruck, Foliendesign, Textilveredelung, Lasergravuren, Über uns, Kontakt, Impressum, Datenschutz)</li>';
+    echo '<li>10 Seiten mit den richtigen Templates (Startseite, Digitaldruck, Foliendesign, Textilveredelung, Lasergravuren, Über uns, Kontakt, Impressum, Datenschutz, AGB)</li>';
     echo '<li>Statische Startseite wird gesetzt</li>';
     echo '<li>Seitentitel: "Werbedruck GM"</li>';
     echo '<li>Permalinks: Beitragsname</li>';
@@ -344,6 +351,7 @@ function werbedruck_icon( $name ) {
         'zap' => '<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>',
         'menu' => '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>',
         'close' => '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>',
+        'download' => '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>',
     );
     return $icons[ $name ] ?? '';
 }
