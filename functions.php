@@ -40,7 +40,7 @@ add_action( 'after_setup_theme', 'werbedruck_setup' );
  */
 function werbedruck_scripts() {
     // Google Fonts
-    wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap', array(), null );
+    wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap', array(), null );
 
     // Theme Stylesheet
     wp_enqueue_style( 'werbedruck-style', get_stylesheet_uri(), array(), WERBEDRUCK_VERSION );
