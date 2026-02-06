@@ -45,7 +45,7 @@
         <nav class="main-nav">
             <a href="<?php echo esc_url( home_url( '/' ) ); ?>" <?php if ( is_front_page() ) echo 'class="active"'; ?>>Start</a>
             <a href="<?php echo esc_url( home_url( '/digitaldruck/' ) ); ?>" <?php if ( is_page( 'digitaldruck' ) ) echo 'class="active"'; ?>>Digitaldruck</a>
-            <a href="<?php echo esc_url( home_url( '/foliendesign/' ) ); ?>" <?php if ( is_page( 'foliendesign' ) ) echo 'class="active"'; ?>>Foliendesign</a>
+            <a href="<?php echo esc_url( home_url( '/folienbeschriftung/' ) ); ?>" <?php if ( is_page( 'folienbeschriftung' ) ) echo 'class="active"'; ?>>Folienbeschriftung</a>
             <a href="<?php echo esc_url( home_url( '/textilveredelung/' ) ); ?>" <?php if ( is_page( 'textilveredelung' ) ) echo 'class="active"'; ?>>Textilveredelung</a>
             <a href="<?php echo esc_url( home_url( '/lasergravuren/' ) ); ?>" <?php if ( is_page( 'lasergravuren' ) ) echo 'class="active"'; ?>>Lasergravuren</a>
             <a href="<?php echo esc_url( home_url( '/ueber-uns/' ) ); ?>" <?php if ( is_page( 'ueber-uns' ) ) echo 'class="active"'; ?>>Über uns</a>
@@ -62,7 +62,7 @@
     <div id="mobileNav" class="mobile-nav">
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>">Start</a>
         <a href="<?php echo esc_url( home_url( '/digitaldruck/' ) ); ?>">Digitaldruck</a>
-        <a href="<?php echo esc_url( home_url( '/foliendesign/' ) ); ?>">Foliendesign</a>
+        <a href="<?php echo esc_url( home_url( '/folienbeschriftung/' ) ); ?>">Folienbeschriftung</a>
         <a href="<?php echo esc_url( home_url( '/textilveredelung/' ) ); ?>">Textilveredelung</a>
         <a href="<?php echo esc_url( home_url( '/lasergravuren/' ) ); ?>">Lasergravuren</a>
         <a href="<?php echo esc_url( home_url( '/ueber-uns/' ) ); ?>">Über uns</a>

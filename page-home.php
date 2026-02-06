@@ -19,7 +19,7 @@ get_header();
             Seit 2018 im Oberbergischen
         </div>
         <h1>Qualität<br><span class="highlight">"MadeInOberberg"</span><br>vom Meister</h1>
-        <p>Professioneller Digitaldruck, Foliendesign, Textilveredelung und Lasergravuren. Preisgünstig, qualitativ hochwertig – auch in Einzel- und Kleinauflagen.</p>
+        <p>Professioneller Digitaldruck, Folienbeschriftung, Textilveredelung und Lasergravuren. Preisgünstig, qualitativ hochwertig – auch in Einzel- und Kleinauflagen.</p>
         <div class="hero-buttons">
             <a href="<?php echo esc_url( home_url( '/kontakt/' ) ); ?>" class="btn btn-accent btn-lg">
                 <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
@@ -41,7 +41,7 @@ get_header();
 <div class="marquee-section">
     <div class="marquee-track">
         <span class="marquee-item">Digitaldruck <span class="dot"></span></span>
-        <span class="marquee-item">Foliendesign <span class="dot"></span></span>
+        <span class="marquee-item">Folienbeschriftung <span class="dot"></span></span>
         <span class="marquee-item">Textilveredelung <span class="dot"></span></span>
         <span class="marquee-item">Lasergravuren <span class="dot"></span></span>
         <span class="marquee-item">Fahrzeugbeschriftung <span class="dot"></span></span>
@@ -49,7 +49,7 @@ get_header();
         <span class="marquee-item">T-Shirt Druck <span class="dot"></span></span>
         <span class="marquee-item">Aufkleber <span class="dot"></span></span>
         <span class="marquee-item">Digitaldruck <span class="dot"></span></span>
-        <span class="marquee-item">Foliendesign <span class="dot"></span></span>
+        <span class="marquee-item">Folienbeschriftung <span class="dot"></span></span>
         <span class="marquee-item">Textilveredelung <span class="dot"></span></span>
         <span class="marquee-item">Lasergravuren <span class="dot"></span></span>
         <span class="marquee-item">Fahrzeugbeschriftung <span class="dot"></span></span>
@@ -84,13 +84,13 @@ get_header();
                 </div>
             </div>
 
-            <!-- Foliendesign -->
+            <!-- Folienbeschriftung -->
             <div class="card reveal stagger-2">
                 <div class="card-img-wrapper">
-                    <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/folien-fahrzeugbeschriftung.jpg' ); ?>" alt="Foliendesign" class="card-img">
+                    <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/folien-fahrzeugbeschriftung.jpg' ); ?>" alt="Folienbeschriftung" class="card-img">
                 </div>
                 <div class="card-body">
-                    <h3 class="card-title">Foliendesign</h3>
+                    <h3 class="card-title">Folienbeschriftung</h3>
                     <p class="card-text">Professionelle Folienverarbeitung für Fahrzeugbeschriftung, Schaufenster und individuelle Designlösungen.</p>
                     <ul class="service-features">
                         <li>Fahrzeugbeschriftung</li>
@@ -98,7 +98,7 @@ get_header();
                         <li>Plotterfolien</li>
                         <li>Designfolien</li>
                     </ul>
-                    <a href="<?php echo esc_url( home_url( '/foliendesign/' ) ); ?>" class="card-link">Mehr erfahren <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                    <a href="<?php echo esc_url( home_url( '/folienbeschriftung/' ) ); ?>" class="card-link">Mehr erfahren <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
                 </div>
             </div>
 

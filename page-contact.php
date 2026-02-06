@@ -124,7 +124,7 @@ $success = isset( $_GET['contact'] ) && $_GET['contact'] === 'success';
                                 <select id="service" name="service" class="form-control">
                                     <option value="">Bitte wählen...</option>
                                     <option value="digitaldruck">Digitaldruck</option>
-                                    <option value="foliendesign">Foliendesign</option>
+                                    <option value="folienbeschriftung">Folienbeschriftung</option>
                                     <option value="textilveredelung">Textilveredelung</option>
                                     <option value="lasergravuren">Lasergravuren</option>
                                     <option value="aufkleber">Aufkleber</option>

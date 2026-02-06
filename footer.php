@@ -15,7 +15,7 @@
                     </span>
                     WERBEDRUCK <span>GM</span>
                 </div>
-                <p style="color: var(--gray-400); line-height: 1.7; margin-bottom: 1.5rem;">Ihr professioneller Partner für Digitaldruck, Foliendesign, Textilveredelung und Lasergravuren im Oberbergischen. Qualität "MadeInOberberg" vom Meister.</p>
+                <p style="color: var(--gray-400); line-height: 1.7; margin-bottom: 1.5rem;">Ihr professioneller Partner für Digitaldruck, Folienbeschriftung, Textilveredelung und Lasergravuren im Oberbergischen. Qualität "MadeInOberberg" vom Meister.</p>
                 <div class="footer-contact-info">
                     <p>
                         <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
@@ -44,7 +44,7 @@
                 <h4>Leistungen</h4>
                 <ul class="footer-links">
                     <li><a href="<?php echo esc_url( home_url( '/digitaldruck/' ) ); ?>">Digitaldruck</a></li>
-                    <li><a href="<?php echo esc_url( home_url( '/foliendesign/' ) ); ?>">Foliendesign</a></li>
+                    <li><a href="<?php echo esc_url( home_url( '/folienbeschriftung/' ) ); ?>">Folienbeschriftung</a></li>
                     <li><a href="<?php echo esc_url( home_url( '/textilveredelung/' ) ); ?>">Textilveredelung</a></li>
                     <li><a href="<?php echo esc_url( home_url( '/lasergravuren/' ) ); ?>">Lasergravuren</a></li>
                     <li><a href="<?php echo esc_url( home_url( '/ueber-uns/' ) ); ?>">Über uns</a></li>

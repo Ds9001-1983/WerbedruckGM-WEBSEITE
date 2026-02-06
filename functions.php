@@ -56,7 +56,7 @@ add_action( 'wp_enqueue_scripts', 'werbedruck_scripts' );
 function werbedruck_page_templates( $templates ) {
     $templates['page-home.php']             = 'Startseite';
     $templates['page-digitaldruck.php']     = 'Digitaldruck';
-    $templates['page-foliendesign.php']     = 'Foliendesign';
+    $templates['page-folienbeschriftung.php']     = 'Folienbeschriftung';
     $templates['page-textilveredelung.php'] = 'Textilveredelung';
     $templates['page-lasergravuren.php']    = 'Lasergravuren';
     $templates['page-about.php']            = 'Über uns';
@@ -91,9 +91,9 @@ function werbedruck_theme_activation() {
             'content'  => '',
         ),
         array(
-            'title'    => 'Foliendesign',
-            'slug'     => 'foliendesign',
-            'template' => 'page-foliendesign.php',
+            'title'    => 'Folienbeschriftung',
+            'slug'     => 'folienbeschriftung',
+            'template' => 'page-folienbeschriftung.php',
             'content'  => '',
         ),
         array(
@@ -217,7 +217,7 @@ function werbedruck_theme_activation() {
             $menu_items = array(
                 'Startseite'       => 'startseite',
                 'Digitaldruck'     => 'digitaldruck',
-                'Foliendesign'     => 'foliendesign',
+                'Folienbeschriftung'     => 'folienbeschriftung',
                 'Textilveredelung' => 'textilveredelung',
                 'Lasergravuren'    => 'lasergravuren',
                 'Über uns'         => 'ueber-uns',
@@ -295,7 +295,7 @@ function werbedruck_setup_page() {
     echo '<hr>';
     echo '<h3>Was wird eingerichtet:</h3>';
     echo '<ul style="list-style: disc; padding-left: 20px;">';
-    echo '<li>10 Seiten mit den richtigen Templates (Startseite, Digitaldruck, Foliendesign, Textilveredelung, Lasergravuren, Über uns, Kontakt, Impressum, Datenschutz, AGB)</li>';
+    echo '<li>10 Seiten mit den richtigen Templates (Startseite, Digitaldruck, Folienbeschriftung, Textilveredelung, Lasergravuren, Über uns, Kontakt, Impressum, Datenschutz, AGB)</li>';
     echo '<li>Statische Startseite wird gesetzt</li>';
     echo '<li>Seitentitel: "Werbedruck GM"</li>';
     echo '<li>Permalinks: Beitragsname</li>';

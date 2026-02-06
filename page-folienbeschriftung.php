@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Foliendesign
+ * Template Name: Folienbeschriftung
  *
  * @package Werbedruck_GM
  */
@@ -18,7 +18,7 @@ get_header();
             <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14"/></svg>
             Professionelle Folienverarbeitung
         </div>
-        <h1>Folien<span class="highlight">design</span></h1>
+        <h1>Folien<span class="highlight">beschriftung</span></h1>
         <p>Professionelle Folienverarbeitung für Fahrzeuge, Schaufenster und individuelle Designlösungen.</p>
         <a href="<?php echo esc_url( home_url( '/kontakt/' ) ); ?>" class="btn btn-accent btn-lg">Jetzt Angebot anfordern</a>
     </div>
@@ -33,7 +33,7 @@ get_header();
                     <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                     Markenfolien
                 </div>
-                <h2>Professionelles <span class="gradient-text">Foliendesign</span></h2>
+                <h2>Professionelle <span class="gradient-text">Folienbeschriftung</span></h2>
                 <p>Von der Fahrzeugbeschriftung über Schaufensterwerbung bis hin zu individuellen Designlösungen – wir verarbeiten hochwertige Folien für jeden Einsatzzweck.</p>
                 <p>Mit unseren professionellen Schneidplottern und Laminiergeräten erstellen wir präzise Folienschnitte und langlebige Beschriftungen.</p>
 
@@ -49,13 +49,13 @@ get_header();
                 <a href="<?php echo esc_url( home_url( '/kontakt/' ) ); ?>" class="btn btn-primary">Beratungstermin vereinbaren</a>
             </div>
             <div class="reveal-right">
-                <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/folien-schneidplotter.jpg' ); ?>" alt="Foliendesign">
+                <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/folien-schneidplotter.jpg' ); ?>" alt="Folienbeschriftung">
             </div>
         </div>
 
         <!-- Services Grid -->
         <div class="mb-16">
-            <h3 class="section-title reveal">Unsere <span class="accent">Foliendesign</span>-Leistungen</h3>
+            <h3 class="section-title reveal">Unsere <span class="accent">Folienbeschriftung</span>-Leistungen</h3>
             <div class="grid grid-4" style="margin-top: 2rem;">
                 <?php
                 $services = array( 'Fahrzeugbeschriftung', 'Schaufensterwerbung', 'Sichtschutzfolien', 'Plotterfolien', 'Designfolien', 'Leuchtkastenbeschriftung', 'Messebeschriftung', 'Wandtattoos' );
