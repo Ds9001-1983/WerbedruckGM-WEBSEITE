@@ -49,7 +49,7 @@ get_header();
                 <a href="<?php echo esc_url( home_url( '/kontakt/' ) ); ?>" class="btn btn-primary">Beratungstermin vereinbaren</a>
             </div>
             <div class="reveal-right">
-                <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/textil-dtf-druck.jpg' ); ?>" alt="Textilveredelung">
+                <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/digitaldruck-uv-drucker.jpg' ); ?>" alt="UV-Drucker für Textilveredelung">
             </div>
         </div>
 
