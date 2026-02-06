@@ -264,6 +264,59 @@ function werbedruck_check_setup() {
 add_action( 'init', 'werbedruck_check_setup' );
 
 /**
+ * Migration: Alte "Foliendesign"-Seite automatisch auf "Folienbeschriftung" umbenennen
+ * Läuft einmalig und setzt ein Flag damit es nicht wiederholt wird.
+ */
+function werbedruck_migrate_foliendesign() {
+    if ( get_option( 'werbedruck_foliendesign_migrated' ) === '1' ) {
+        return;
+    }
+
+    // Alte Seite mit Slug "foliendesign" suchen
+    $old_page = get_page_by_path( 'foliendesign' );
+
+    if ( $old_page ) {
+        // Titel, Slug und Template aktualisieren
+        wp_update_post( array(
+            'ID'         => $old_page->ID,
+            'post_title' => 'Folienbeschriftung',
+            'post_name'  => 'folienbeschriftung',
+        ) );
+        update_post_meta( $old_page->ID, '_wp_page_template', 'page-folienbeschriftung.php' );
+    }
+
+    // Auch alle anderen Seiten prüfen und Templates zuweisen falls sie "Standard-Template" haben
+    $template_map = array(
+        'startseite'       => 'page-home.php',
+        'digitaldruck'     => 'page-digitaldruck.php',
+        'folienbeschriftung' => 'page-folienbeschriftung.php',
+        'textilveredelung' => 'page-textilveredelung.php',
+        'lasergravuren'    => 'page-lasergravuren.php',
+        'ueber-uns'        => 'page-about.php',
+        'kontakt'          => 'page-contact.php',
+        'impressum'        => 'page-impressum.php',
+        'datenschutz'      => 'page-datenschutz.php',
+        'agb'              => 'page-agb.php',
+    );
+
+    foreach ( $template_map as $slug => $template ) {
+        $page = get_page_by_path( $slug );
+        if ( $page ) {
+            $current_template = get_post_meta( $page->ID, '_wp_page_template', true );
+            if ( empty( $current_template ) || $current_template === 'default' ) {
+                update_post_meta( $page->ID, '_wp_page_template', $template );
+            }
+        }
+    }
+
+    // Permalink-Regeln neu generieren
+    flush_rewrite_rules();
+
+    update_option( 'werbedruck_foliendesign_migrated', '1' );
+}
+add_action( 'init', 'werbedruck_migrate_foliendesign' );
+
+/**
  * Admin-Button zum erneuten Ausführen des Setups
  */
 function werbedruck_admin_menu() {
