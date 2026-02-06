@@ -11,7 +11,7 @@ get_header();
 <!-- Hero -->
 <section class="page-hero">
     <div class="hero-gradient"></div>
-    <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1567444295894-75a5b78b1cfe?auto=format&fit=crop&w=1920&h=1080');"></div>
+    <div class="hero-bg" style="background-image: url('<?php echo esc_url( get_template_directory_uri() . '/img/hero/digitaldruck-werkstatt-uebersicht.jpg' ); ?>');"></div>
     <div class="hero-overlay"></div>
     <div class="container">
         <div class="hero-badge">
@@ -49,7 +49,7 @@ get_header();
                 <a href="<?php echo esc_url( home_url( '/kontakt/' ) ); ?>" class="btn btn-primary">Beratungstermin vereinbaren</a>
             </div>
             <div class="reveal-right">
-                <img src="https://images.unsplash.com/photo-1567444295894-75a5b78b1cfe?auto=format&fit=crop&w=800&h=600" alt="Digitaldruck Maschine">
+                <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/digitaldruck-uv-drucker.jpg' ); ?>" alt="Digitaldruck Maschine">
             </div>
         </div>
 
@@ -77,6 +77,49 @@ get_header();
                         </div>
                     </div>
                 <?php $i++; endforeach; ?>
+            </div>
+        </div>
+
+        <!-- Galerie -->
+        <div class="mb-16">
+            <h3 class="section-title reveal">Unsere <span class="accent">Arbeiten</span></h3>
+            <div class="grid grid-3" style="margin-top: 2rem;">
+                <div class="card reveal stagger-1">
+                    <div class="card-img-wrapper">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/digitaldruck-grossformat-plotter.jpg' ); ?>" alt="Großformat-Plotter" class="card-img">
+                    </div>
+                    <div class="card-body"><p style="font-weight:700;color:var(--dark);">MIMAKI Großformat-Plotter</p></div>
+                </div>
+                <div class="card reveal stagger-2">
+                    <div class="card-img-wrapper">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/digitaldruck-banner-grossformat.jpg' ); ?>" alt="Banner Großformat" class="card-img">
+                    </div>
+                    <div class="card-body"><p style="font-weight:700;color:var(--dark);">Banner & Großformatdruck</p></div>
+                </div>
+                <div class="card reveal stagger-3">
+                    <div class="card-img-wrapper">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/digitaldruck-produkte-aufkleber.jpg' ); ?>" alt="Aufkleber" class="card-img">
+                    </div>
+                    <div class="card-body"><p style="font-weight:700;color:var(--dark);">Aufkleber & Etiketten</p></div>
+                </div>
+                <div class="card reveal stagger-4">
+                    <div class="card-img-wrapper">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/digitaldruck-schilder-plaketten.jpg' ); ?>" alt="Schilder" class="card-img">
+                    </div>
+                    <div class="card-body"><p style="font-weight:700;color:var(--dark);">Schilder & Plaketten</p></div>
+                </div>
+                <div class="card reveal stagger-5">
+                    <div class="card-img-wrapper">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/digitaldruck-laminierung.jpg' ); ?>" alt="Laminierung" class="card-img">
+                    </div>
+                    <div class="card-body"><p style="font-weight:700;color:var(--dark);">Laminierung & Nachbearbeitung</p></div>
+                </div>
+                <div class="card reveal stagger-6">
+                    <div class="card-img-wrapper">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/digitaldruck-pruefplaketten.jpg' ); ?>" alt="Prüfplaketten" class="card-img">
+                    </div>
+                    <div class="card-body"><p style="font-weight:700;color:var(--dark);">Prüfplaketten</p></div>
+                </div>
             </div>
         </div>
 

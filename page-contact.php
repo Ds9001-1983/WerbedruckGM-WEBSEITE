@@ -13,7 +13,7 @@ $success = isset( $_GET['contact'] ) && $_GET['contact'] === 'success';
 <!-- Hero -->
 <section class="page-hero">
     <div class="hero-gradient" style="background: linear-gradient(135deg, var(--secondary-dark) 0%, var(--gray-800) 50%, var(--primary-dark) 100%);"></div>
-    <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1423666639041-f56000c27a9a?auto=format&fit=crop&w=1920&h=1080');"></div>
+    <div class="hero-bg" style="background-image: url('<?php echo esc_url( get_template_directory_uri() . '/img/hero/werkstatt-aussen.jpg' ); ?>');"></div>
     <div class="hero-overlay"></div>
     <div class="container">
         <h1>Kontakt</h1>

@@ -11,7 +11,7 @@ get_header();
 <!-- Hero -->
 <section class="page-hero">
     <div class="hero-gradient"></div>
-    <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=1920&h=1080');"></div>
+    <div class="hero-bg" style="background-image: url('<?php echo esc_url( get_template_directory_uri() . '/img/hero/laser-maschine.jpg' ); ?>');"></div>
     <div class="hero-overlay"></div>
     <div class="container">
         <div class="hero-badge">
@@ -49,7 +49,7 @@ get_header();
                 <a href="<?php echo esc_url( home_url( '/kontakt/' ) ); ?>" class="btn btn-primary">Beratungstermin vereinbaren</a>
             </div>
             <div class="reveal-right">
-                <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=800&h=600" alt="Lasergravur">
+                <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/laser-holzgravur.jpg' ); ?>" alt="Lasergravur">
             </div>
         </div>
 
@@ -104,19 +104,29 @@ get_header();
             <h3 class="section-title reveal">Anwendungs<span class="accent">beispiele</span></h3>
             <div class="examples-grid" style="margin-top: 2rem;">
                 <div class="reveal stagger-1">
-                    <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=400&h=300" alt="Holzgravur Beispiel">
+                    <img src="<?php echo esc_url( get_template_directory_uri() . '/img/thumb/laser-personalisiert.jpg' ); ?>" alt="Holzgravur Beispiel">
                     <h4>Personalisierte Holzartikel</h4>
                     <p>Individuelle Gravuren für Geschenke und Dekoration</p>
                 </div>
                 <div class="reveal stagger-2">
-                    <img src="https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?auto=format&fit=crop&w=400&h=300" alt="Industrielle Kennzeichnung">
+                    <img src="<?php echo esc_url( get_template_directory_uri() . '/img/thumb/laser-metallgravur.jpg' ); ?>" alt="Industrielle Kennzeichnung">
                     <h4>Industrielle Kennzeichnung</h4>
                     <p>Dauerhafte Beschriftung für Maschinen und Bauteile</p>
                 </div>
                 <div class="reveal stagger-3">
-                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&w=400&h=300" alt="Acryl Werbeschilder">
+                    <img src="<?php echo esc_url( get_template_directory_uri() . '/img/thumb/laser-acryl-schild.jpg' ); ?>" alt="Acryl Werbeschilder">
                     <h4>Acryl-Werbeschilder</h4>
                     <p>Hochwertige Schilder für professionelle Präsentation</p>
+                </div>
+                <div class="reveal stagger-4">
+                    <img src="<?php echo esc_url( get_template_directory_uri() . '/img/thumb/laser-schilder-plaketten.jpg' ); ?>" alt="Schilder & Plaketten">
+                    <h4>Schilder & Plaketten</h4>
+                    <p>Professionelle Beschilderung für Unternehmen</p>
+                </div>
+                <div class="reveal stagger-5">
+                    <img src="<?php echo esc_url( get_template_directory_uri() . '/img/thumb/laser-maschine.jpg' ); ?>" alt="Lasermaschine">
+                    <h4>Unser Laserequipment</h4>
+                    <p>Modernste CO2- und Faserlaser-Technologie</p>
                 </div>
             </div>
         </div>

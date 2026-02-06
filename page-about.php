@@ -11,7 +11,7 @@ get_header();
 <!-- Hero -->
 <section class="page-hero">
     <div class="hero-gradient"></div>
-    <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=1920&h=1080');"></div>
+    <div class="hero-bg" style="background-image: url('<?php echo esc_url( get_template_directory_uri() . '/img/hero/werkstatt-aussen.jpg' ); ?>');"></div>
     <div class="hero-overlay"></div>
     <div class="container">
         <div class="hero-badge">
@@ -49,8 +49,8 @@ get_header();
                 </p>
             </div>
             <div class="about-images reveal-right">
-                <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&h=600" alt="Werkstatt">
-                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&h=600" alt="Technik">
+                <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/werkstatt-maschinenpark.jpg' ); ?>" alt="Werkstatt">
+                <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/werkstatt-team.jpg' ); ?>" alt="Technik">
             </div>
         </div>
 

@@ -11,7 +11,7 @@ get_header();
 <!-- Hero -->
 <section class="page-hero">
     <div class="hero-gradient"></div>
-    <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1600298881974-6be191ceeda1?auto=format&fit=crop&w=1920&h=1080');"></div>
+    <div class="hero-bg" style="background-image: url('<?php echo esc_url( get_template_directory_uri() . '/img/hero/folien-fahrzeugbeschriftung.jpg' ); ?>');"></div>
     <div class="hero-overlay"></div>
     <div class="container">
         <div class="hero-badge">
@@ -49,7 +49,7 @@ get_header();
                 <a href="<?php echo esc_url( home_url( '/kontakt/' ) ); ?>" class="btn btn-primary">Beratungstermin vereinbaren</a>
             </div>
             <div class="reveal-right">
-                <img src="https://images.unsplash.com/photo-1600298881974-6be191ceeda1?auto=format&fit=crop&w=800&h=600" alt="Foliendesign">
+                <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/folien-schneidplotter.jpg' ); ?>" alt="Foliendesign">
             </div>
         </div>
 
@@ -68,6 +68,49 @@ get_header();
                         </div>
                     </div>
                 <?php $i++; endforeach; ?>
+            </div>
+        </div>
+
+        <!-- Galerie -->
+        <div class="mb-16">
+            <h3 class="section-title reveal">Unsere <span class="accent">Arbeiten</span></h3>
+            <div class="grid grid-3" style="margin-top: 2rem;">
+                <div class="card reveal stagger-1">
+                    <div class="card-img-wrapper">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/folien-fahrzeug-komplett.jpg' ); ?>" alt="Fahrzeugbeschriftung" class="card-img">
+                    </div>
+                    <div class="card-body"><p style="font-weight:700;color:var(--dark);">Fahrzeugbeschriftung komplett</p></div>
+                </div>
+                <div class="card reveal stagger-2">
+                    <div class="card-img-wrapper">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/folien-schaufenster.jpg' ); ?>" alt="Schaufenster" class="card-img">
+                    </div>
+                    <div class="card-body"><p style="font-weight:700;color:var(--dark);">Schaufensterbeschriftung</p></div>
+                </div>
+                <div class="card reveal stagger-3">
+                    <div class="card-img-wrapper">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/folien-leuchtkasten-schild.jpg' ); ?>" alt="Leuchtkasten" class="card-img">
+                    </div>
+                    <div class="card-body"><p style="font-weight:700;color:var(--dark);">Leuchtkasten & Schilder</p></div>
+                </div>
+                <div class="card reveal stagger-4">
+                    <div class="card-img-wrapper">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/folien-sichtschutz-fenster.jpg' ); ?>" alt="Sichtschutz" class="card-img">
+                    </div>
+                    <div class="card-body"><p style="font-weight:700;color:var(--dark);">Sichtschutzfolien</p></div>
+                </div>
+                <div class="card reveal stagger-5">
+                    <div class="card-img-wrapper">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/folien-schaufensterwerbung.jpg' ); ?>" alt="Schaufensterwerbung" class="card-img">
+                    </div>
+                    <div class="card-body"><p style="font-weight:700;color:var(--dark);">Schaufensterwerbung</p></div>
+                </div>
+                <div class="card reveal stagger-6">
+                    <div class="card-img-wrapper">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/folien-werkstatt-verarbeitung.jpg' ); ?>" alt="Werkstatt" class="card-img">
+                    </div>
+                    <div class="card-body"><p style="font-weight:700;color:var(--dark);">Folienverarbeitung in der Werkstatt</p></div>
+                </div>
             </div>
         </div>
 

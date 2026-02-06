@@ -11,7 +11,7 @@ get_header();
 <!-- Hero Section - Premium Fullscreen -->
 <section class="hero">
     <div class="hero-gradient"></div>
-    <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1541961017774-22349e4a1262?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080');"></div>
+    <div class="hero-bg" style="background-image: url('<?php echo esc_url( get_template_directory_uri() . '/img/hero/werkstatt-uebersicht.jpg' ); ?>');"></div>
     <div class="hero-overlay"></div>
     <div class="container">
         <div class="hero-badge">
@@ -69,7 +69,7 @@ get_header();
             <!-- Digitaldruck -->
             <div class="card reveal stagger-1">
                 <div class="card-img-wrapper">
-                    <img src="https://images.unsplash.com/photo-1567444295894-75a5b78b1cfe?auto=format&fit=crop&w=800&h=400" alt="Digitaldruck" class="card-img">
+                    <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/digitaldruck-grossformat-plotter.jpg' ); ?>" alt="Digitaldruck" class="card-img">
                 </div>
                 <div class="card-body">
                     <h3 class="card-title">Digitaldruck</h3>
@@ -87,7 +87,7 @@ get_header();
             <!-- Foliendesign -->
             <div class="card reveal stagger-2">
                 <div class="card-img-wrapper">
-                    <img src="https://images.unsplash.com/photo-1600298881974-6be191ceeda1?auto=format&fit=crop&w=800&h=400" alt="Foliendesign" class="card-img">
+                    <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/folien-fahrzeugbeschriftung.jpg' ); ?>" alt="Foliendesign" class="card-img">
                 </div>
                 <div class="card-body">
                     <h3 class="card-title">Foliendesign</h3>
@@ -105,7 +105,7 @@ get_header();
             <!-- Textilveredelung -->
             <div class="card reveal stagger-3">
                 <div class="card-img-wrapper">
-                    <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&h=400" alt="Textilveredelung" class="card-img">
+                    <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/textil-bedruckte-shirts.jpg' ); ?>" alt="Textilveredelung" class="card-img">
                 </div>
                 <div class="card-body">
                     <h3 class="card-title">Textilveredelung</h3>
@@ -123,7 +123,7 @@ get_header();
             <!-- Lasergravuren -->
             <div class="card reveal stagger-4">
                 <div class="card-img-wrapper">
-                    <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=800&h=400" alt="Lasergravuren" class="card-img">
+                    <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/laser-holzgravur.jpg' ); ?>" alt="Lasergravuren" class="card-img">
                 </div>
                 <div class="card-body">
                     <h3 class="card-title">Lasergravuren</h3>
@@ -235,8 +235,8 @@ get_header();
             </div>
 
             <div class="about-images reveal-right">
-                <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&h=600" alt="Moderne Druckwerkstatt">
-                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&h=600" alt="Professionelle Drucktechnik">
+                <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/werkstatt-maschinenpark.jpg' ); ?>" alt="Moderne Druckwerkstatt">
+                <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/werkstatt-detail.jpg' ); ?>" alt="Professionelle Drucktechnik">
             </div>
         </div>
     </div>
@@ -292,7 +292,7 @@ get_header();
         <div class="grid grid-3">
             <div class="card reveal stagger-1">
                 <div class="card-img-wrapper">
-                    <img src="https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&w=800&h=600" alt="Fahrzeugbeschriftung" class="card-img">
+                    <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/folien-fahrzeug-komplett.jpg' ); ?>" alt="Fahrzeugbeschriftung" class="card-img">
                 </div>
                 <div class="card-body">
                     <h3 class="card-title" style="font-size: 1.125rem;">Fahrzeugbeschriftung</h3>
@@ -301,7 +301,7 @@ get_header();
             </div>
             <div class="card reveal stagger-2">
                 <div class="card-img-wrapper">
-                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&h=600" alt="Großformat Banner" class="card-img">
+                    <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/digitaldruck-banner-grossformat.jpg' ); ?>" alt="Großformat Banner" class="card-img">
                 </div>
                 <div class="card-body">
                     <h3 class="card-title" style="font-size: 1.125rem;">Großformat Banner</h3>
@@ -310,7 +310,7 @@ get_header();
             </div>
             <div class="card reveal stagger-3">
                 <div class="card-img-wrapper">
-                    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&h=600" alt="T-Shirt Druck" class="card-img">
+                    <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/textil-arbeitskleidung.jpg' ); ?>" alt="T-Shirt Druck" class="card-img">
                 </div>
                 <div class="card-body">
                     <h3 class="card-title" style="font-size: 1.125rem;">T-Shirt Druck</h3>
@@ -319,7 +319,7 @@ get_header();
             </div>
             <div class="card reveal stagger-4">
                 <div class="card-img-wrapper">
-                    <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=800&h=600" alt="Lasergravur" class="card-img">
+                    <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/laser-personalisiert.jpg' ); ?>" alt="Lasergravur" class="card-img">
                 </div>
                 <div class="card-body">
                     <h3 class="card-title" style="font-size: 1.125rem;">Lasergravur</h3>
@@ -328,7 +328,7 @@ get_header();
             </div>
             <div class="card reveal stagger-5">
                 <div class="card-img-wrapper">
-                    <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=800&h=600" alt="Geschäftsschilder" class="card-img">
+                    <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/folien-leuchtkasten-schild.jpg' ); ?>" alt="Geschäftsschilder" class="card-img">
                 </div>
                 <div class="card-body">
                     <h3 class="card-title" style="font-size: 1.125rem;">Geschäftsschilder</h3>
@@ -337,7 +337,7 @@ get_header();
             </div>
             <div class="card reveal stagger-6">
                 <div class="card-img-wrapper">
-                    <img src="https://images.unsplash.com/photo-1594736797933-d0dbc1b60959?auto=format&fit=crop&w=800&h=600" alt="Aufkleber Design" class="card-img">
+                    <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/digitaldruck-produkte-aufkleber.jpg' ); ?>" alt="Aufkleber Design" class="card-img">
                 </div>
                 <div class="card-body">
                     <h3 class="card-title" style="font-size: 1.125rem;">Aufkleber Design</h3>

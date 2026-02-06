@@ -11,7 +11,7 @@ get_header();
 <!-- Hero -->
 <section class="page-hero">
     <div class="hero-gradient"></div>
-    <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=1920&h=1080');"></div>
+    <div class="hero-bg" style="background-image: url('<?php echo esc_url( get_template_directory_uri() . '/img/hero/textil-transferpresse.jpg' ); ?>');"></div>
     <div class="hero-overlay"></div>
     <div class="container">
         <div class="hero-badge">
@@ -49,7 +49,7 @@ get_header();
                 <a href="<?php echo esc_url( home_url( '/kontakt/' ) ); ?>" class="btn btn-primary">Beratungstermin vereinbaren</a>
             </div>
             <div class="reveal-right">
-                <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&h=600" alt="Textilveredelung">
+                <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/textil-dtf-druck.jpg' ); ?>" alt="Textilveredelung">
             </div>
         </div>
 
@@ -68,6 +68,49 @@ get_header();
                         </div>
                     </div>
                 <?php $i++; endforeach; ?>
+            </div>
+        </div>
+
+        <!-- Galerie -->
+        <div class="mb-16">
+            <h3 class="section-title reveal">Unsere <span class="accent">Arbeiten</span></h3>
+            <div class="grid grid-3" style="margin-top: 2rem;">
+                <div class="card reveal stagger-1">
+                    <div class="card-img-wrapper">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/textil-bedruckte-shirts.jpg' ); ?>" alt="Bedruckte T-Shirts" class="card-img">
+                    </div>
+                    <div class="card-body"><p style="font-weight:700;color:var(--dark);">Bedruckte T-Shirts</p></div>
+                </div>
+                <div class="card reveal stagger-2">
+                    <div class="card-img-wrapper">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/textil-arbeitskleidung.jpg' ); ?>" alt="Arbeitskleidung" class="card-img">
+                    </div>
+                    <div class="card-body"><p style="font-weight:700;color:var(--dark);">Bedruckte Arbeitskleidung</p></div>
+                </div>
+                <div class="card reveal stagger-3">
+                    <div class="card-img-wrapper">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/textil-caps-muetzen.jpg' ); ?>" alt="Caps" class="card-img">
+                    </div>
+                    <div class="card-body"><p style="font-weight:700;color:var(--dark);">Caps & Mützen</p></div>
+                </div>
+                <div class="card reveal stagger-4">
+                    <div class="card-img-wrapper">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/textil-flexdruck.jpg' ); ?>" alt="Flexdruck" class="card-img">
+                    </div>
+                    <div class="card-body"><p style="font-weight:700;color:var(--dark);">Flexdruck auf Textil</p></div>
+                </div>
+                <div class="card reveal stagger-5">
+                    <div class="card-img-wrapper">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/textil-sublimation.jpg' ); ?>" alt="Sublimation" class="card-img">
+                    </div>
+                    <div class="card-body"><p style="font-weight:700;color:var(--dark);">Sublimationsdruck</p></div>
+                </div>
+                <div class="card reveal stagger-6">
+                    <div class="card-img-wrapper">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/textil-transferpresse.jpg' ); ?>" alt="Transferpresse" class="card-img">
+                    </div>
+                    <div class="card-body"><p style="font-weight:700;color:var(--dark);">Transferpresse in Aktion</p></div>
+                </div>
             </div>
         </div>
 
