@@ -36,7 +36,8 @@
 <header class="site-header" id="siteHeader">
     <div class="container">
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="site-logo">
-            <img src="<?php echo esc_url( get_template_directory_uri() . '/img/logo.png' ); ?>" alt="Werbedruck GM" class="logo-img">
+            <img src="<?php echo esc_url( get_template_directory_uri() . '/img/logo.png' ); ?>" alt="Werbedruck GM - Digital- und UV-Druck, Lohndruckerei" class="logo-img">
+            <span class="logo-tagline">Digital- und UV-Druck, Lohndruckerei</span>
         </a>
 
         <nav class="main-nav">

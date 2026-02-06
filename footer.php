@@ -9,9 +9,10 @@
     <div class="container">
         <div class="footer-grid">
             <div>
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" style="display: inline-block; margin-bottom: 1.25rem;">
-                    <img src="<?php echo esc_url( get_template_directory_uri() . '/img/logo-footer.png' ); ?>" alt="Werbedruck GM" class="logo-img-footer" style="height: 80px; width: auto; filter: brightness(1.1);">
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" style="display: inline-block; margin-bottom: 0.75rem;">
+                    <img src="<?php echo esc_url( get_template_directory_uri() . '/img/logo.png' ); ?>" alt="Werbedruck GM - Digital- und UV-Druck, Lohndruckerei" class="logo-img-footer" style="height: 70px; width: auto; filter: brightness(1.2);">
                 </a>
+                <p style="color: var(--accent); font-weight: 600; font-size: 0.875rem; margin-bottom: 1rem; letter-spacing: 0.02em;">Digital- und UV-Druck, Lohndruckerei</p>
                 <p style="color: var(--gray-400); line-height: 1.7; margin-bottom: 1.5rem;">Ihr professioneller Partner für Digitaldruck, Folienbeschriftung, Textilveredelung und Lasergravuren im Oberbergischen. Qualität "MadeInOberberg" vom Meister.</p>
                 <div class="footer-contact-info">
                     <p>

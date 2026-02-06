@@ -293,7 +293,23 @@ img {
   color: var(--dark);
   transition: all var(--transition);
   letter-spacing: -0.03em;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-decoration: none;
+}
+
+.logo-tagline {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  color: var(--gray-600);
+  letter-spacing: 0.04em;
+  margin-top: 0.125rem;
+  transition: all var(--transition);
+}
+
+.site-header.scrolled .logo-tagline {
+  font-size: 0.625rem;
 }
 
 .site-logo span {
