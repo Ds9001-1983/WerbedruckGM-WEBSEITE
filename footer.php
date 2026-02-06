@@ -72,6 +72,63 @@
     </div>
 </footer>
 
+<!-- Cookie Consent Box -->
+<div id="cookieConsent" class="cookie-consent" style="display:none;">
+    <div class="cookie-consent-inner">
+        <div class="cookie-consent-content">
+            <div class="cookie-consent-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2"><path d="M12 2a10 10 0 1010 10A10 10 0 0012 2z"/><circle cx="8" cy="10" r="1" fill="var(--primary)"/><circle cx="12" cy="7" r="1" fill="var(--primary)"/><circle cx="15" cy="12" r="1" fill="var(--primary)"/><circle cx="10" cy="14" r="1" fill="var(--primary)"/><circle cx="14" cy="16" r="1" fill="var(--primary)"/></svg>
+            </div>
+            <div class="cookie-consent-text">
+                <h4 style="margin: 0 0 0.5rem 0; color: var(--dark); font-size: 1.125rem; font-weight: 700;">Cookie-Einstellungen</h4>
+                <p style="margin: 0; color: var(--gray-600); font-size: 0.875rem; line-height: 1.6;">
+                    Wir verwenden Cookies, um Ihnen die bestmögliche Erfahrung auf unserer Website zu bieten. 
+                    Einige Cookies sind technisch notwendig, während andere uns helfen, die Website zu verbessern. 
+                    Weitere Informationen finden Sie in unserer 
+                    <a href="<?php echo esc_url( home_url( '/datenschutz/' ) ); ?>" style="color: var(--primary); text-decoration: underline;">Datenschutzerklärung</a>.
+                </p>
+            </div>
+        </div>
+        <div class="cookie-consent-options">
+            <div class="cookie-option">
+                <label class="cookie-toggle">
+                    <input type="checkbox" id="cookieNecessary" checked disabled>
+                    <span class="cookie-toggle-slider"></span>
+                </label>
+                <div>
+                    <strong style="font-size: 0.875rem; color: var(--dark);">Notwendig</strong>
+                    <p style="font-size: 0.75rem; color: var(--gray-500); margin: 0;">Erforderlich für die Grundfunktionen der Website.</p>
+                </div>
+            </div>
+            <div class="cookie-option">
+                <label class="cookie-toggle">
+                    <input type="checkbox" id="cookieAnalytics">
+                    <span class="cookie-toggle-slider"></span>
+                </label>
+                <div>
+                    <strong style="font-size: 0.875rem; color: var(--dark);">Statistik</strong>
+                    <p style="font-size: 0.75rem; color: var(--gray-500); margin: 0;">Helfen uns, die Nutzung der Website zu verstehen.</p>
+                </div>
+            </div>
+            <div class="cookie-option">
+                <label class="cookie-toggle">
+                    <input type="checkbox" id="cookieMarketing">
+                    <span class="cookie-toggle-slider"></span>
+                </label>
+                <div>
+                    <strong style="font-size: 0.875rem; color: var(--dark);">Marketing</strong>
+                    <p style="font-size: 0.75rem; color: var(--gray-500); margin: 0;">Werden für personalisierte Werbung verwendet.</p>
+                </div>
+            </div>
+        </div>
+        <div class="cookie-consent-buttons">
+            <button id="cookieAcceptAll" class="btn btn-primary" style="flex: 1;">Alle akzeptieren</button>
+            <button id="cookieAcceptSelected" class="btn" style="flex: 1; background: var(--gray-200); color: var(--dark); border: 1px solid var(--gray-300);">Auswahl bestätigen</button>
+            <button id="cookieRejectAll" class="btn" style="flex: 1; background: transparent; color: var(--gray-600); border: 1px solid var(--gray-300);">Nur notwendige</button>
+        </div>
+    </div>
+</div>
+
 <!-- Back to Top -->
 <button class="back-to-top" id="backToTop" aria-label="Nach oben scrollen">
     <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 15l7-7 7 7"/></svg>

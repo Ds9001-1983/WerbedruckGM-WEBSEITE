@@ -366,21 +366,54 @@ function werbedruck_handle_contact_form() {
         return;
     }
 
-    $firstname = sanitize_text_field( $_POST['firstname'] ?? '' );
-    $lastname  = sanitize_text_field( $_POST['lastname'] ?? '' );
-    $email     = sanitize_email( $_POST['email'] ?? '' );
-    $phone     = sanitize_text_field( $_POST['phone'] ?? '' );
-    $service   = sanitize_text_field( $_POST['service'] ?? '' );
-    $message   = sanitize_textarea_field( $_POST['message'] ?? '' );
+    $firstname          = sanitize_text_field( $_POST['firstname'] ?? '' );
+    $lastname           = sanitize_text_field( $_POST['lastname'] ?? '' );
+    $email              = sanitize_email( $_POST['email'] ?? '' );
+    $phone              = sanitize_text_field( $_POST['phone'] ?? '' );
+    $company            = sanitize_text_field( $_POST['company'] ?? '' );
+    $service            = sanitize_text_field( $_POST['service'] ?? '' );
+    $budget             = sanitize_text_field( $_POST['budget'] ?? '' );
+    $quantity           = sanitize_text_field( $_POST['quantity'] ?? '' );
+    $deadline           = sanitize_text_field( $_POST['deadline'] ?? '' );
+    $message            = sanitize_textarea_field( $_POST['message'] ?? '' );
+    $contact_preference = sanitize_text_field( $_POST['contact_preference'] ?? 'email' );
 
     $to      = get_option( 'admin_email' );
     $subject = 'Neue Kontaktanfrage von ' . $firstname . ' ' . $lastname;
-    $body    = "Name: {$firstname} {$lastname}\n";
-    $body   .= "E-Mail: {$email}\n";
-    $body   .= "Telefon: {$phone}\n";
-    $body   .= "Gewünschte Leistung: {$service}\n\n";
-    $body   .= "Nachricht:\n{$message}";
-    $headers = array( 'Reply-To: ' . $email );
+
+    $body  = "══════════════════════════════════════\n";
+    $body .= "       NEUE KONTAKTANFRAGE\n";
+    $body .= "══════════════════════════════════════\n\n";
+    $body .= "── Persönliche Daten ──\n";
+    $body .= "Name:    {$firstname} {$lastname}\n";
+    $body .= "E-Mail:  {$email}\n";
+    $body .= "Telefon: {$phone}\n";
+    if ( $company ) {
+        $body .= "Firma:   {$company}\n";
+    }
+    $body .= "\n── Projektdetails ──\n";
+    $body .= "Leistung:   {$service}\n";
+    if ( $budget ) {
+        $body .= "Budget:     {$budget}\n";
+    }
+    if ( $quantity ) {
+        $body .= "Menge:      {$quantity}\n";
+    }
+    if ( $deadline ) {
+        $body .= "Termin:     {$deadline}\n";
+    }
+    $body .= "\n── Nachricht ──\n";
+    $body .= "{$message}\n";
+    $body .= "\n── Kontaktpräferenz ──\n";
+    $pref_labels = array( 'email' => 'Per E-Mail', 'phone' => 'Per Telefon', 'whatsapp' => 'Per WhatsApp' );
+    $body .= ( $pref_labels[ $contact_preference ] ?? $contact_preference ) . "\n";
+    $body .= "\n══════════════════════════════════════\n";
+    $body .= "Gesendet über werbedruck-gm.de\n";
+
+    $headers = array(
+        'Reply-To: ' . $firstname . ' ' . $lastname . ' <' . $email . '>',
+        'Content-Type: text/plain; charset=UTF-8',
+    );
 
     wp_mail( $to, $subject, $body, $headers );
 

@@ -196,4 +196,129 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // ============================================
+    // Cookie Consent Box
+    // ============================================
+    var cookieConsent = document.getElementById('cookieConsent');
+    var cookieAcceptAll = document.getElementById('cookieAcceptAll');
+    var cookieAcceptSelected = document.getElementById('cookieAcceptSelected');
+    var cookieRejectAll = document.getElementById('cookieRejectAll');
+    var cookieAnalytics = document.getElementById('cookieAnalytics');
+    var cookieMarketing = document.getElementById('cookieMarketing');
+
+    function getCookieConsent() {
+        try {
+            return JSON.parse(localStorage.getItem('wgm_cookie_consent'));
+        } catch(e) {
+            return null;
+        }
+    }
+
+    function setCookieConsent(consent) {
+        consent.timestamp = new Date().toISOString();
+        localStorage.setItem('wgm_cookie_consent', JSON.stringify(consent));
+    }
+
+    function hideCookieBox() {
+        if (cookieConsent) {
+            cookieConsent.style.animation = 'cookieSlideDown 0.4s ease-in forwards';
+            setTimeout(function() {
+                cookieConsent.style.display = 'none';
+            }, 400);
+        }
+    }
+
+    function showCookieBox() {
+        if (cookieConsent) {
+            cookieConsent.style.display = 'block';
+            cookieConsent.style.animation = 'cookieSlideUp 0.5s ease-out';
+        }
+    }
+
+    // Check if consent already given
+    var existingConsent = getCookieConsent();
+    if (!existingConsent && cookieConsent) {
+        // Show after 1 second delay
+        setTimeout(showCookieBox, 1000);
+    }
+
+    if (cookieAcceptAll) {
+        cookieAcceptAll.addEventListener('click', function() {
+            setCookieConsent({ necessary: true, analytics: true, marketing: true });
+            hideCookieBox();
+        });
+    }
+
+    if (cookieAcceptSelected) {
+        cookieAcceptSelected.addEventListener('click', function() {
+            setCookieConsent({
+                necessary: true,
+                analytics: cookieAnalytics ? cookieAnalytics.checked : false,
+                marketing: cookieMarketing ? cookieMarketing.checked : false
+            });
+            hideCookieBox();
+        });
+    }
+
+    if (cookieRejectAll) {
+        cookieRejectAll.addEventListener('click', function() {
+            setCookieConsent({ necessary: true, analytics: false, marketing: false });
+            hideCookieBox();
+        });
+    }
+
+    // ============================================
+    // Contact Form Validation & UX
+    // ============================================
+    var contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        var formInputs = contactForm.querySelectorAll('.form-control');
+
+        // Live validation styling
+        formInputs.forEach(function(input) {
+            input.addEventListener('blur', function() {
+                if (this.value.trim() !== '') {
+                    this.classList.add('filled');
+                    if (this.checkValidity()) {
+                        this.classList.add('valid');
+                        this.classList.remove('invalid');
+                    } else {
+                        this.classList.add('invalid');
+                        this.classList.remove('valid');
+                    }
+                } else {
+                    this.classList.remove('filled', 'valid', 'invalid');
+                }
+            });
+
+            input.addEventListener('focus', function() {
+                this.classList.remove('invalid');
+            });
+        });
+
+        // Character counter for textarea
+        var messageField = document.getElementById('message');
+        var charCounter = document.getElementById('charCounter');
+        if (messageField && charCounter) {
+            messageField.addEventListener('input', function() {
+                var len = this.value.length;
+                charCounter.textContent = len + ' / 2000 Zeichen';
+                if (len > 1800) {
+                    charCounter.style.color = 'var(--primary)';
+                } else {
+                    charCounter.style.color = 'var(--gray-500)';
+                }
+            });
+        }
+
+        // Form submit animation
+        contactForm.addEventListener('submit', function() {
+            var submitBtn = contactForm.querySelector('button[type="submit"]');
+            if (submitBtn) {
+                submitBtn.innerHTML = '<span class="spinner"></span> Wird gesendet...';
+                submitBtn.disabled = true;
+            }
+        });
+    }
+
 });
