@@ -11,7 +11,7 @@ get_header();
 <!-- Hero -->
 <section class="page-hero">
     <div class="hero-gradient"></div>
-    <div class="hero-bg" style="background-image: url('<?php echo esc_url( get_template_directory_uri() . '/img/hero/textil-transferpresse.jpg' ); ?>');"></div>
+    <div class="hero-bg" style="background-image: url('<?php echo esc_url( get_template_directory_uri() . '/img/hero/textil-wallraf-kollektion.jpg' ); ?>');"></div>
     <div class="hero-overlay"></div>
     <div class="container">
         <div class="hero-badge">
@@ -49,7 +49,7 @@ get_header();
                 <a href="<?php echo esc_url( home_url( '/kontakt/' ) ); ?>" class="btn btn-primary">Beratungstermin vereinbaren</a>
             </div>
             <div class="reveal-right">
-                <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/digitaldruck-uv-drucker.jpg' ); ?>" alt="UV-Drucker für Textilveredelung">
+                <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/textil-transfer-farbabstimmung.jpg' ); ?>" alt="UV-Drucker für Textilveredelung">
             </div>
         </div>
 
@@ -77,37 +77,37 @@ get_header();
             <div class="grid grid-3" style="margin-top: 2rem;">
                 <div class="card reveal stagger-1">
                     <div class="card-img-wrapper">
-                        <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/textil-bedruckte-shirts.jpg' ); ?>" alt="Bedruckte T-Shirts" class="card-img">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/textil-polo-farbabgleich.jpg' ); ?>" alt="Bedruckte T-Shirts" class="card-img">
                     </div>
                     <div class="card-body"><p style="font-weight:700;color:var(--dark);">Bedruckte T-Shirts</p></div>
                 </div>
                 <div class="card reveal stagger-2">
                     <div class="card-img-wrapper">
-                        <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/textil-arbeitskleidung.jpg' ); ?>" alt="Arbeitskleidung" class="card-img">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/textil-tassen-sublimation.jpg' ); ?>" alt="Arbeitskleidung" class="card-img">
                     </div>
                     <div class="card-body"><p style="font-weight:700;color:var(--dark);">Bedruckte Arbeitskleidung</p></div>
                 </div>
                 <div class="card reveal stagger-3">
                     <div class="card-img-wrapper">
-                        <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/textil-caps-muetzen.jpg' ); ?>" alt="Caps" class="card-img">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/textil-tshirts-wkb.jpg' ); ?>" alt="Caps" class="card-img">
                     </div>
                     <div class="card-body"><p style="font-weight:700;color:var(--dark);">Caps & Mützen</p></div>
                 </div>
                 <div class="card reveal stagger-4">
                     <div class="card-img-wrapper">
-                        <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/textil-flexdruck.jpg' ); ?>" alt="Flexdruck" class="card-img">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/textil-pantone-tshirt.jpg' ); ?>" alt="Flexdruck" class="card-img">
                     </div>
                     <div class="card-body"><p style="font-weight:700;color:var(--dark);">Flexdruck auf Textil</p></div>
                 </div>
                 <div class="card reveal stagger-5">
                     <div class="card-img-wrapper">
-                        <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/textil-sublimation.jpg' ); ?>" alt="Sublimation" class="card-img">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/textil-thermotasse.jpg' ); ?>" alt="Sublimation" class="card-img">
                     </div>
                     <div class="card-body"><p style="font-weight:700;color:var(--dark);">Sublimationsdruck</p></div>
                 </div>
                 <div class="card reveal stagger-6">
                     <div class="card-img-wrapper">
-                        <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/textil-transferpresse.jpg' ); ?>" alt="Transferpresse" class="card-img">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/textil-bestickung-weste.jpg' ); ?>" alt="Transferpresse" class="card-img">
                     </div>
                     <div class="card-body"><p style="font-weight:700;color:var(--dark);">Transferpresse in Aktion</p></div>
                 </div>

@@ -11,7 +11,7 @@ get_header();
 <!-- Hero Section - Premium Fullscreen -->
 <section class="hero">
     <div class="hero-gradient"></div>
-    <div class="hero-bg" style="background-image: url('<?php echo esc_url( get_template_directory_uri() . '/img/hero/werkstatt-uebersicht.jpg' ); ?>');"></div>
+    <div class="hero-bg" style="background-image: url('<?php echo esc_url( get_template_directory_uri() . '/img/hero/digitaldruck-werkstatt-panorama.jpg' ); ?>');"></div>
     <div class="hero-overlay"></div>
     <div class="container">
         <div class="hero-badge">
@@ -69,7 +69,7 @@ get_header();
             <!-- Digitaldruck -->
             <div class="card reveal stagger-1">
                 <div class="card-img-wrapper">
-                    <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/digitaldruck-grossformat-plotter.jpg' ); ?>" alt="Digitaldruck" class="card-img">
+                    <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/digitaldruck-mimaki-banner.jpg' ); ?>" alt="Digitaldruck" class="card-img">
                 </div>
                 <div class="card-body">
                     <h3 class="card-title">Digitaldruck</h3>
@@ -87,7 +87,7 @@ get_header();
             <!-- Folienbeschriftung -->
             <div class="card reveal stagger-2">
                 <div class="card-img-wrapper">
-                    <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/folien-fahrzeugbeschriftung.jpg' ); ?>" alt="Folienbeschriftung" class="card-img">
+                    <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/folien-fahrschule-plot.jpg' ); ?>" alt="Folienbeschriftung" class="card-img">
                 </div>
                 <div class="card-body">
                     <h3 class="card-title">Folienbeschriftung</h3>
@@ -105,7 +105,7 @@ get_header();
             <!-- Textilveredelung -->
             <div class="card reveal stagger-3">
                 <div class="card-img-wrapper">
-                    <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/textil-bedruckte-shirts.jpg' ); ?>" alt="Textilveredelung" class="card-img">
+                    <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/textil-polo-farbabgleich.jpg' ); ?>" alt="Textilveredelung" class="card-img">
                 </div>
                 <div class="card-body">
                     <h3 class="card-title">Textilveredelung</h3>
@@ -123,7 +123,7 @@ get_header();
             <!-- Lasergravuren -->
             <div class="card reveal stagger-4">
                 <div class="card-img-wrapper">
-                    <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/laser-holzgravur.jpg' ); ?>" alt="Lasergravuren" class="card-img">
+                    <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/laser-acryl-hand.jpg' ); ?>" alt="Lasergravuren" class="card-img">
                 </div>
                 <div class="card-body">
                     <h3 class="card-title">Lasergravuren</h3>
@@ -235,8 +235,8 @@ get_header();
             </div>
 
             <div class="about-images reveal-right">
-                <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/werkstatt-maschinenpark.jpg' ); ?>" alt="Moderne Druckwerkstatt">
-                <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/werkstatt-detail.jpg' ); ?>" alt="Professionelle Drucktechnik">
+                <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/digitaldruck-mimaki-halle.jpg' ); ?>" alt="Moderne Druckwerkstatt">
+                <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/digitaldruck-werkstatt-panorama.jpg' ); ?>" alt="Professionelle Drucktechnik">
             </div>
         </div>
     </div>
@@ -292,7 +292,7 @@ get_header();
         <div class="grid grid-3">
             <div class="card reveal stagger-1">
                 <div class="card-img-wrapper">
-                    <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/folien-fahrzeug-komplett.jpg' ); ?>" alt="Fahrzeugbeschriftung" class="card-img">
+                    <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/folien-fahrschule-aufkleber.jpg' ); ?>" alt="Folienbeschriftung" class="card-img">
                 </div>
                 <div class="card-body">
                     <h3 class="card-title" style="font-size: 1.125rem;">Fahrzeugbeschriftung</h3>
@@ -301,7 +301,7 @@ get_header();
             </div>
             <div class="card reveal stagger-2">
                 <div class="card-img-wrapper">
-                    <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/digitaldruck-banner-grossformat.jpg' ); ?>" alt="Großformat Banner" class="card-img">
+                    <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/digitaldruck-mimaki-banner.jpg' ); ?>" alt="Großformat Banner" class="card-img">
                 </div>
                 <div class="card-body">
                     <h3 class="card-title" style="font-size: 1.125rem;">Großformat Banner</h3>
@@ -310,7 +310,7 @@ get_header();
             </div>
             <div class="card reveal stagger-3">
                 <div class="card-img-wrapper">
-                    <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/textil-arbeitskleidung.jpg' ); ?>" alt="T-Shirt Druck" class="card-img">
+                    <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/textil-wallraf-kollektion.jpg' ); ?>" alt="T-Shirt Druck" class="card-img">
                 </div>
                 <div class="card-body">
                     <h3 class="card-title" style="font-size: 1.125rem;">T-Shirt Druck</h3>
@@ -319,7 +319,7 @@ get_header();
             </div>
             <div class="card reveal stagger-4">
                 <div class="card-img-wrapper">
-                    <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/laser-personalisiert.jpg' ); ?>" alt="Lasergravur" class="card-img">
+                    <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/laser-sokehui-holzgravur.jpg' ); ?>" alt="Lasergravur" class="card-img">
                 </div>
                 <div class="card-body">
                     <h3 class="card-title" style="font-size: 1.125rem;">Lasergravur</h3>
@@ -328,7 +328,7 @@ get_header();
             </div>
             <div class="card reveal stagger-5">
                 <div class="card-img-wrapper">
-                    <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/folien-leuchtkasten-schild.jpg' ); ?>" alt="Geschäftsschilder" class="card-img">
+                    <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/digitaldruck-uv-aufkleber.jpg' ); ?>" alt="UV-Druck Aufkleber" class="card-img">
                 </div>
                 <div class="card-body">
                     <h3 class="card-title" style="font-size: 1.125rem;">Geschäftsschilder</h3>
@@ -337,7 +337,7 @@ get_header();
             </div>
             <div class="card reveal stagger-6">
                 <div class="card-img-wrapper">
-                    <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/digitaldruck-produkte-aufkleber.jpg' ); ?>" alt="Aufkleber Design" class="card-img">
+                    <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/digitaldruck-mimaki-aufkleber.jpg' ); ?>" alt="Aufkleber Design" class="card-img">
                 </div>
                 <div class="card-body">
                     <h3 class="card-title" style="font-size: 1.125rem;">Aufkleber Design</h3>

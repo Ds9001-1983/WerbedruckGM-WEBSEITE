@@ -11,7 +11,7 @@ get_header();
 <!-- Hero -->
 <section class="page-hero">
     <div class="hero-gradient"></div>
-    <div class="hero-bg" style="background-image: url('<?php echo esc_url( get_template_directory_uri() . '/img/hero/werkstatt-aussen.jpg' ); ?>');"></div>
+    <div class="hero-bg" style="background-image: url('<?php echo esc_url( get_template_directory_uri() . '/img/hero/digitaldruck-werkstatt-panorama.jpg' ); ?>');"></div>
     <div class="hero-overlay"></div>
     <div class="container">
         <div class="hero-badge">
@@ -49,8 +49,8 @@ get_header();
                 </p>
             </div>
             <div class="about-images reveal-right">
-                <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/werkstatt-maschinenpark.jpg' ); ?>" alt="Werkstatt">
-                <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/werkstatt-team.jpg' ); ?>" alt="Technik">
+                <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/digitaldruck-mimaki-halle.jpg' ); ?>" alt="Werkstatt">
+                <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/digitaldruck-banner-atac.jpg' ); ?>" alt="Technik">
             </div>
         </div>
 

@@ -11,7 +11,7 @@ get_header();
 <!-- Hero -->
 <section class="page-hero">
     <div class="hero-gradient"></div>
-    <div class="hero-bg" style="background-image: url('<?php echo esc_url( get_template_directory_uri() . '/img/hero/digitaldruck-werkstatt-uebersicht.jpg' ); ?>');"></div>
+    <div class="hero-bg" style="background-image: url('<?php echo esc_url( get_template_directory_uri() . '/img/hero/digitaldruck-mimaki-halle.jpg' ); ?>');"></div>
     <div class="hero-overlay"></div>
     <div class="container">
         <div class="hero-badge">
@@ -49,7 +49,7 @@ get_header();
                 <a href="<?php echo esc_url( home_url( '/kontakt/' ) ); ?>" class="btn btn-primary">Beratungstermin vereinbaren</a>
             </div>
             <div class="reveal-right">
-                <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/digitaldruck-banner-grossformat.jpg' ); ?>" alt="Digitaldruck Großformat">
+                <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/digitaldruck-mimaki-banner.jpg' ); ?>" alt="Digitaldruck Großformat">
             </div>
         </div>
 
@@ -86,37 +86,37 @@ get_header();
             <div class="grid grid-3" style="margin-top: 2rem;">
                 <div class="card reveal stagger-1">
                     <div class="card-img-wrapper">
-                        <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/digitaldruck-grossformat-plotter.jpg' ); ?>" alt="Großformat-Plotter" class="card-img">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/digitaldruck-mimaki-snack.jpg' ); ?>" alt="Großformat-Plotter" class="card-img">
                     </div>
                     <div class="card-body"><p style="font-weight:700;color:var(--dark);">MIMAKI Großformat-Plotter</p></div>
                 </div>
                 <div class="card reveal stagger-2">
                     <div class="card-img-wrapper">
-                        <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/digitaldruck-banner-grossformat.jpg' ); ?>" alt="Banner Großformat" class="card-img">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/digitaldruck-mimaki-banner.jpg' ); ?>" alt="Banner Großformat" class="card-img">
                     </div>
                     <div class="card-body"><p style="font-weight:700;color:var(--dark);">Banner & Großformatdruck</p></div>
                 </div>
                 <div class="card reveal stagger-3">
                     <div class="card-img-wrapper">
-                        <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/digitaldruck-produkte-aufkleber.jpg' ); ?>" alt="Aufkleber" class="card-img">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/digitaldruck-mimaki-aufkleber.jpg' ); ?>" alt="Aufkleber" class="card-img">
                     </div>
                     <div class="card-body"><p style="font-weight:700;color:var(--dark);">Aufkleber & Etiketten</p></div>
                 </div>
                 <div class="card reveal stagger-4">
                     <div class="card-img-wrapper">
-                        <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/digitaldruck-schilder-plaketten.jpg' ); ?>" alt="Schilder" class="card-img">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/digitaldruck-uv-taschentuecher.jpg' ); ?>" alt="Schilder" class="card-img">
                     </div>
                     <div class="card-body"><p style="font-weight:700;color:var(--dark);">Schilder & Plaketten</p></div>
                 </div>
                 <div class="card reveal stagger-5">
                     <div class="card-img-wrapper">
-                        <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/digitaldruck-laminierung.jpg' ); ?>" alt="Laminierung" class="card-img">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/digitaldruck-easylam-laminator.jpg' ); ?>" alt="Laminierung" class="card-img">
                     </div>
                     <div class="card-body"><p style="font-weight:700;color:var(--dark);">Laminierung & Nachbearbeitung</p></div>
                 </div>
                 <div class="card reveal stagger-6">
                     <div class="card-img-wrapper">
-                        <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/digitaldruck-pruefplaketten.jpg' ); ?>" alt="Prüfplaketten" class="card-img">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/img/content/digitaldruck-mimaki-snack.jpg' ); ?>" alt="Prüfplaketten" class="card-img">
                     </div>
                     <div class="card-body"><p style="font-weight:700;color:var(--dark);">Prüfplaketten</p></div>
                 </div>
