@@ -3,14 +3,14 @@
  * Werbedruck GM Theme Functions
  *
  * @package Werbedruck_GM
- * @version 1.0.0
+ * @version 1.1.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
-define( 'WERBEDRUCK_VERSION', '1.0.0' );
+define( 'WERBEDRUCK_VERSION', '1.1.0' );
 define( 'WERBEDRUCK_DIR', get_template_directory() );
 define( 'WERBEDRUCK_URI', get_template_directory_uri() );
 
@@ -66,6 +66,237 @@ function werbedruck_page_templates( $templates ) {
     return $templates;
 }
 add_filter( 'theme_page_templates', 'werbedruck_page_templates' );
+
+/**
+ * ============================================================
+ * AUTO-SETUP: Seiten, Templates, Menüs und Einstellungen
+ * beim Aktivieren des Themes automatisch anlegen
+ * ============================================================
+ */
+function werbedruck_theme_activation() {
+
+    // Alle Seiten die automatisch angelegt werden sollen
+    $pages = array(
+        array(
+            'title'    => 'Startseite',
+            'slug'     => 'startseite',
+            'template' => 'page-home.php',
+            'content'  => '',
+        ),
+        array(
+            'title'    => 'Digitaldruck',
+            'slug'     => 'digitaldruck',
+            'template' => 'page-digitaldruck.php',
+            'content'  => '',
+        ),
+        array(
+            'title'    => 'Foliendesign',
+            'slug'     => 'foliendesign',
+            'template' => 'page-foliendesign.php',
+            'content'  => '',
+        ),
+        array(
+            'title'    => 'Textilveredelung',
+            'slug'     => 'textilveredelung',
+            'template' => 'page-textilveredelung.php',
+            'content'  => '',
+        ),
+        array(
+            'title'    => 'Lasergravuren',
+            'slug'     => 'lasergravuren',
+            'template' => 'page-lasergravuren.php',
+            'content'  => '',
+        ),
+        array(
+            'title'    => 'Über uns',
+            'slug'     => 'ueber-uns',
+            'template' => 'page-about.php',
+            'content'  => '',
+        ),
+        array(
+            'title'    => 'Kontakt',
+            'slug'     => 'kontakt',
+            'template' => 'page-contact.php',
+            'content'  => '',
+        ),
+        array(
+            'title'    => 'Impressum',
+            'slug'     => 'impressum',
+            'template' => 'page-impressum.php',
+            'content'  => '',
+        ),
+        array(
+            'title'    => 'Datenschutz',
+            'slug'     => 'datenschutz',
+            'template' => 'page-datenschutz.php',
+            'content'  => '',
+        ),
+    );
+
+    $front_page_id = 0;
+
+    foreach ( $pages as $page_data ) {
+        // Prüfen ob Seite bereits existiert (nach Slug)
+        $existing = get_page_by_path( $page_data['slug'] );
+
+        if ( $existing ) {
+            $page_id = $existing->ID;
+            // Template aktualisieren falls nötig
+            update_post_meta( $page_id, '_wp_page_template', $page_data['template'] );
+            // Sicherstellen dass die Seite veröffentlicht ist
+            if ( $existing->post_status !== 'publish' ) {
+                wp_update_post( array(
+                    'ID'          => $page_id,
+                    'post_status' => 'publish',
+                ) );
+            }
+        } else {
+            $page_id = wp_insert_post( array(
+                'post_title'   => $page_data['title'],
+                'post_name'    => $page_data['slug'],
+                'post_content' => $page_data['content'],
+                'post_status'  => 'publish',
+                'post_type'    => 'page',
+                'post_author'  => 1,
+            ) );
+
+            if ( $page_id && ! is_wp_error( $page_id ) ) {
+                update_post_meta( $page_id, '_wp_page_template', $page_data['template'] );
+            }
+        }
+
+        // Startseite merken
+        if ( $page_data['slug'] === 'startseite' && $page_id && ! is_wp_error( $page_id ) ) {
+            $front_page_id = $page_id;
+        }
+    }
+
+    // Statische Startseite setzen
+    if ( $front_page_id ) {
+        update_option( 'show_on_front', 'page' );
+        update_option( 'page_on_front', $front_page_id );
+    }
+
+    // Seitentitel und Beschreibung setzen
+    update_option( 'blogname', 'Werbedruck GM' );
+    update_option( 'blogdescription', 'Qualität MadeInOberberg vom Meister' );
+
+    // Permalinks auf "Beitragsname" setzen
+    update_option( 'permalink_structure', '/%postname%/' );
+
+    // Permalink-Regeln neu generieren
+    flush_rewrite_rules();
+
+    // Standard-Beitrag "Hallo Welt!" löschen
+    $hello_world = get_page_by_path( 'hallo-welt', OBJECT, 'post' );
+    if ( $hello_world ) {
+        wp_delete_post( $hello_world->ID, true );
+    }
+
+    // Standard "Beispiel-Seite" löschen
+    $sample_page = get_page_by_path( 'beispiel-seite' );
+    if ( $sample_page ) {
+        wp_delete_post( $sample_page->ID, true );
+    }
+
+    // Hauptmenü erstellen
+    $menu_name = 'Hauptmenü';
+    $menu_exists = wp_get_nav_menu_object( $menu_name );
+
+    if ( ! $menu_exists ) {
+        $menu_id = wp_create_nav_menu( $menu_name );
+
+        if ( ! is_wp_error( $menu_id ) ) {
+            $menu_items = array(
+                'Startseite'       => 'startseite',
+                'Digitaldruck'     => 'digitaldruck',
+                'Foliendesign'     => 'foliendesign',
+                'Textilveredelung' => 'textilveredelung',
+                'Lasergravuren'    => 'lasergravuren',
+                'Über uns'         => 'ueber-uns',
+                'Kontakt'          => 'kontakt',
+            );
+
+            $position = 1;
+            foreach ( $menu_items as $title => $slug ) {
+                $page = get_page_by_path( $slug );
+                if ( $page ) {
+                    wp_update_nav_menu_item( $menu_id, 0, array(
+                        'menu-item-title'     => $title,
+                        'menu-item-object'    => 'page',
+                        'menu-item-object-id' => $page->ID,
+                        'menu-item-type'      => 'post_type',
+                        'menu-item-status'    => 'publish',
+                        'menu-item-position'  => $position,
+                    ) );
+                    $position++;
+                }
+            }
+
+            // Menü der primary Location zuweisen
+            $locations = get_theme_mod( 'nav_menu_locations' );
+            $locations['primary'] = $menu_id;
+            set_theme_mod( 'nav_menu_locations', $locations );
+        }
+    }
+
+    // Flag setzen damit Setup nicht doppelt läuft
+    update_option( 'werbedruck_theme_setup_done', '1' );
+}
+add_action( 'after_switch_theme', 'werbedruck_theme_activation' );
+
+/**
+ * Auch bei jedem Laden prüfen ob Setup gelaufen ist
+ * (für den Fall dass das Theme per WP Pusher aktualisiert wird)
+ */
+function werbedruck_check_setup() {
+    if ( get_option( 'werbedruck_theme_setup_done' ) !== '1' ) {
+        werbedruck_theme_activation();
+    }
+}
+add_action( 'init', 'werbedruck_check_setup' );
+
+/**
+ * Admin-Button zum erneuten Ausführen des Setups
+ */
+function werbedruck_admin_menu() {
+    add_theme_page(
+        'Werbedruck GM Setup',
+        'Theme Setup',
+        'manage_options',
+        'werbedruck-setup',
+        'werbedruck_setup_page'
+    );
+}
+add_action( 'admin_menu', 'werbedruck_admin_menu' );
+
+function werbedruck_setup_page() {
+    if ( isset( $_POST['werbedruck_run_setup'] ) && check_admin_referer( 'werbedruck_setup_nonce' ) ) {
+        delete_option( 'werbedruck_theme_setup_done' );
+        werbedruck_theme_activation();
+        echo '<div class="notice notice-success"><p>Theme-Setup wurde erfolgreich ausgeführt! Alle Seiten wurden angelegt.</p></div>';
+    }
+
+    echo '<div class="wrap">';
+    echo '<h1>Werbedruck GM - Theme Setup</h1>';
+    echo '<p>Klicke auf den Button um alle Seiten, Menüs und Einstellungen automatisch anzulegen.</p>';
+    echo '<form method="post">';
+    wp_nonce_field( 'werbedruck_setup_nonce' );
+    echo '<input type="hidden" name="werbedruck_run_setup" value="1">';
+    echo '<p><button type="submit" class="button button-primary button-hero">Theme-Setup ausführen</button></p>';
+    echo '</form>';
+    echo '<hr>';
+    echo '<h3>Was wird eingerichtet:</h3>';
+    echo '<ul style="list-style: disc; padding-left: 20px;">';
+    echo '<li>9 Seiten mit den richtigen Templates (Startseite, Digitaldruck, Foliendesign, Textilveredelung, Lasergravuren, Über uns, Kontakt, Impressum, Datenschutz)</li>';
+    echo '<li>Statische Startseite wird gesetzt</li>';
+    echo '<li>Seitentitel: "Werbedruck GM"</li>';
+    echo '<li>Permalinks: Beitragsname</li>';
+    echo '<li>Hauptmenü mit allen Seiten</li>';
+    echo '<li>Standard-Inhalte (Hallo Welt, Beispiel-Seite) werden gelöscht</li>';
+    echo '</ul>';
+    echo '</div>';
+}
 
 /**
  * Contact Form Handler
