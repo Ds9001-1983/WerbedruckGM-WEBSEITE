@@ -307,6 +307,29 @@ img {
   transform: scale(1.02);
 }
 
+/* Logo Image */
+.logo-img {
+  height: 55px;
+  width: auto;
+  transition: all var(--transition);
+  object-fit: contain;
+}
+
+.site-header.scrolled .logo-img {
+  height: 45px;
+}
+
+.logo-img-footer {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+  transition: all var(--transition);
+}
+
+.logo-img-footer:hover {
+  transform: scale(1.03);
+}
+
 .main-nav {
   display: none;
   align-items: center;

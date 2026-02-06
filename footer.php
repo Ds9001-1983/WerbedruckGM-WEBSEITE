@@ -9,12 +9,9 @@
     <div class="container">
         <div class="footer-grid">
             <div>
-                <div class="site-logo" style="margin-bottom: 1.25rem; font-size: 1.375rem; display: inline-flex;">
-                    <span class="logo-icon" style="width: 32px; height: 32px;">
-                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2z"/></svg>
-                    </span>
-                    WERBEDRUCK <span>GM</span>
-                </div>
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" style="display: inline-block; margin-bottom: 1.25rem;">
+                    <img src="<?php echo esc_url( get_template_directory_uri() . '/img/logo-footer.png' ); ?>" alt="Werbedruck GM" class="logo-img-footer" style="height: 80px; width: auto; filter: brightness(1.1);">
+                </a>
                 <p style="color: var(--gray-400); line-height: 1.7; margin-bottom: 1.5rem;">Ihr professioneller Partner für Digitaldruck, Folienbeschriftung, Textilveredelung und Lasergravuren im Oberbergischen. Qualität "MadeInOberberg" vom Meister.</p>
                 <div class="footer-contact-info">
                     <p>

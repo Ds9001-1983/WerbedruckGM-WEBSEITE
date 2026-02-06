@@ -36,10 +36,7 @@
 <header class="site-header" id="siteHeader">
     <div class="container">
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="site-logo">
-            <span class="logo-icon">
-                <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2z"/></svg>
-            </span>
-            WERBEDRUCK <span>GM</span>
+            <img src="<?php echo esc_url( get_template_directory_uri() . '/img/logo.png' ); ?>" alt="Werbedruck GM" class="logo-img">
         </a>
 
         <nav class="main-nav">
