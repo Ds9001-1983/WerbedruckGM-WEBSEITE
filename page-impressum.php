@@ -29,7 +29,7 @@ get_header();
                 51645 Gummersbach
             </p>
 
-            <h2>Büro / Buchhaltung</h2>
+            <h2>Rechnungsanschrift</h2>
             <p>
                 c/o Sonja Gerharz<br>
                 Alte Landstr. 57<br>

@@ -44,7 +44,7 @@ $success = isset( $_GET['contact'] ) && $_GET['contact'] === 'success';
                 <div class="contact-info-item">
                     <div class="icon-box"><?php echo werbedruck_icon('map-pin'); ?></div>
                     <div>
-                        <h4>Büro / Buchhaltung</h4>
+                        <h4>Rechnungsanschrift</h4>
                         <p>c/o Sonja Gerharz<br>Alte Landstr. 57<br>51647 Gummersbach</p>
                     </div>
                 </div>
@@ -72,7 +72,7 @@ $success = isset( $_GET['contact'] ) && $_GET['contact'] === 'success';
                     <div class="icon-box"><?php echo werbedruck_icon('clock'); ?></div>
                     <div>
                         <h4>Öffnungszeiten</h4>
-                        <p>Mo – Fr: 9:00 – 17:00 Uhr<br>Sa: Nach Vereinbarung</p>
+                        <p>Nur nach Vereinbarung</p>
                     </div>
                 </div>
 
