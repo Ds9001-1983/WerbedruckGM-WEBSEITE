@@ -267,58 +267,5 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // ============================================
-    // Contact Form Validation & UX
-    // ============================================
-    var contactForm = document.getElementById('contactForm');
-    if (contactForm) {
-        var formInputs = contactForm.querySelectorAll('.form-control');
-
-        // Live validation styling
-        formInputs.forEach(function(input) {
-            input.addEventListener('blur', function() {
-                if (this.value.trim() !== '') {
-                    this.classList.add('filled');
-                    if (this.checkValidity()) {
-                        this.classList.add('valid');
-                        this.classList.remove('invalid');
-                    } else {
-                        this.classList.add('invalid');
-                        this.classList.remove('valid');
-                    }
-                } else {
-                    this.classList.remove('filled', 'valid', 'invalid');
-                }
-            });
-
-            input.addEventListener('focus', function() {
-                this.classList.remove('invalid');
-            });
-        });
-
-        // Character counter for textarea
-        var messageField = document.getElementById('message');
-        var charCounter = document.getElementById('charCounter');
-        if (messageField && charCounter) {
-            messageField.addEventListener('input', function() {
-                var len = this.value.length;
-                charCounter.textContent = len + ' / 2000 Zeichen';
-                if (len > 1800) {
-                    charCounter.style.color = 'var(--primary)';
-                } else {
-                    charCounter.style.color = 'var(--gray-500)';
-                }
-            });
-        }
-
-        // Form submit animation
-        contactForm.addEventListener('submit', function() {
-            var submitBtn = contactForm.querySelector('button[type="submit"]');
-            if (submitBtn) {
-                submitBtn.innerHTML = '<span class="spinner"></span> Wird gesendet...';
-                submitBtn.disabled = true;
-            }
-        });
-    }
 
 });
