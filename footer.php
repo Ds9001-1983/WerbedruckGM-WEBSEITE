@@ -66,7 +66,7 @@
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; <?php echo date( 'Y' ); ?> Werbedruck GM – Digital- und UV-Druck, Lohndruckerei. Inhaber: Thomas Krüger. Alle Rechte vorbehalten.</p>
+            <p>&copy; <?php echo date( 'Y' ); ?> Werbedruck GM – Digital- und UV-Druck, Lohndruckerei. Inhaber: Sonja Gerharz. Alle Rechte vorbehalten.</p>
             <p style="margin-top: 0.5rem;">Made with &#10084;&#65039; by <a href="https://superbrand.marketing" target="_blank" rel="noopener">SUPERBRAND.marketing</a> – Dein Superheld für deine Werbung.</p>
         </div>
     </div>

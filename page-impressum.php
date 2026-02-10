@@ -20,7 +20,7 @@ get_header();
                 Partner des Werbemittelhandels
             </p>
             <p>
-                <strong>Inhaber:</strong> Thomas Krüger
+                <strong>Inhaber:</strong> Sonja Gerharz
             </p>
 
             <h2>Werkstatt</h2>
@@ -52,7 +52,7 @@ get_header();
 
             <h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
             <p>
-                Thomas Krüger<br>
+                Sonja Gerharz<br>
                 Quellenweg 6a<br>
                 51645 Gummersbach
             </p>
