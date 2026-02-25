@@ -21,9 +21,9 @@ get_header();
         <h1>Qualität<br><span class="highlight">"MadeInOberberg"</span><br>vom Meister</h1>
         <p>Professioneller Digitaldruck, Folienbeschriftung, Textilveredelung und Lasergravuren. Preisgünstig, qualitativ hochwertig – auch in Einzel- und Kleinauflagen.</p>
         <div class="hero-buttons">
-            <a href="<?php echo esc_url( home_url( '/kontakt/' ) ); ?>" class="btn btn-accent btn-lg">
-                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
-                Jetzt Angebot erhalten
+            <a href="tel:+4916059099110" class="btn btn-accent btn-lg">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                Jetzt anrufen
             </a>
             <a href="#services" class="btn btn-outline-white btn-lg">
                 <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
@@ -37,27 +37,6 @@ get_header();
     </div>
 </section>
 
-<!-- Marquee Section -->
-<div class="marquee-section">
-    <div class="marquee-track">
-        <span class="marquee-item">Digitaldruck <span class="dot"></span></span>
-        <span class="marquee-item">Folienbeschriftung <span class="dot"></span></span>
-        <span class="marquee-item">Textilveredelung <span class="dot"></span></span>
-        <span class="marquee-item">Lasergravuren <span class="dot"></span></span>
-        <span class="marquee-item">Fahrzeugbeschriftung <span class="dot"></span></span>
-        <span class="marquee-item">Schilder & Banner <span class="dot"></span></span>
-        <span class="marquee-item">T-Shirt Druck <span class="dot"></span></span>
-        <span class="marquee-item">Aufkleber <span class="dot"></span></span>
-        <span class="marquee-item">Digitaldruck <span class="dot"></span></span>
-        <span class="marquee-item">Folienbeschriftung <span class="dot"></span></span>
-        <span class="marquee-item">Textilveredelung <span class="dot"></span></span>
-        <span class="marquee-item">Lasergravuren <span class="dot"></span></span>
-        <span class="marquee-item">Fahrzeugbeschriftung <span class="dot"></span></span>
-        <span class="marquee-item">Schilder & Banner <span class="dot"></span></span>
-        <span class="marquee-item">T-Shirt Druck <span class="dot"></span></span>
-        <span class="marquee-item">Aufkleber <span class="dot"></span></span>
-    </div>
-</div>
 
 <!-- Services Section -->
 <section id="services" class="section section-gradient">
@@ -80,7 +59,7 @@ get_header();
                         <li>Sichtschutzfolien</li>
                         <li>Prüfplaketten</li>
                     </ul>
-                    <a href="<?php echo esc_url( home_url( '/digitaldruck/' ) ); ?>" class="card-link">Mehr erfahren <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+
                 </div>
             </div>
 
@@ -98,7 +77,7 @@ get_header();
                         <li>Plotterfolien</li>
                         <li>Designfolien</li>
                     </ul>
-                    <a href="<?php echo esc_url( home_url( '/folienbeschriftung/' ) ); ?>" class="card-link">Mehr erfahren <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+
                 </div>
             </div>
 
@@ -116,7 +95,7 @@ get_header();
                         <li>Becher-/Tassendruck</li>
                         <li>Arbeitskleidung</li>
                     </ul>
-                    <a href="<?php echo esc_url( home_url( '/textilveredelung/' ) ); ?>" class="card-link">Mehr erfahren <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+
                 </div>
             </div>
 
@@ -134,7 +113,7 @@ get_header();
                         <li>Kunststoffgravuren</li>
                         <li>Personalisierung</li>
                     </ul>
-                    <a href="<?php echo esc_url( home_url( '/lasergravuren/' ) ); ?>" class="card-link">Mehr erfahren <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+
                 </div>
             </div>
         </div>
@@ -228,8 +207,8 @@ get_header();
                     </div>
                 </div>
 
-                <a href="<?php echo esc_url( home_url( '/kontakt/' ) ); ?>" class="btn btn-primary">
-                    <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                <a href="tel:+4916059099110" class="btn btn-primary">
+                    <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
                     Persönlichen Termin vereinbaren
                 </a>
             </div>
@@ -355,9 +334,9 @@ get_header();
             <h3>Bereit für Ihr nächstes Projekt?</h3>
             <p>Kontaktieren Sie uns für eine kostenlose Beratung und ein unverbindliches Angebot.</p>
             <div class="cta-buttons">
-                <a href="<?php echo esc_url( home_url( '/kontakt/' ) ); ?>" class="btn btn-accent btn-lg">
-                    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-                    Jetzt anfragen
+                <a href="tel:+4916059099110" class="btn btn-accent btn-lg">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                    Jetzt anrufen
                 </a>
                 <a href="tel:+4916059099110" class="btn btn-outline-white btn-lg">
                     <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>

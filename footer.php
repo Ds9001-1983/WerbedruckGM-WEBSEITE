@@ -39,28 +39,10 @@
             </div>
 
             <div>
-                <h4>Leistungen</h4>
-                <ul class="footer-links">
-                    <li><a href="<?php echo esc_url( home_url( '/digitaldruck/' ) ); ?>">Digitaldruck</a></li>
-                    <li><a href="<?php echo esc_url( home_url( '/folienbeschriftung/' ) ); ?>">Folienbeschriftung</a></li>
-                    <li><a href="<?php echo esc_url( home_url( '/textilveredelung/' ) ); ?>">Textilveredelung</a></li>
-                    <li><a href="<?php echo esc_url( home_url( '/lasergravuren/' ) ); ?>">Lasergravuren</a></li>
-                    <li><a href="<?php echo esc_url( home_url( '/ueber-uns/' ) ); ?>">Über uns</a></li>
-                    <li><a href="<?php echo esc_url( home_url( '/kontakt/' ) ); ?>">Kontakt</a></li>
-                </ul>
-            </div>
-
-            <div>
                 <h4>Rechtliches</h4>
                 <ul class="footer-links">
                     <li><a href="<?php echo esc_url( home_url( '/impressum/' ) ); ?>">Impressum</a></li>
                     <li><a href="<?php echo esc_url( home_url( '/datenschutz/' ) ); ?>">Datenschutz</a></li>
-                    <li><a href="<?php echo esc_url( home_url( '/agb/' ) ); ?>">AGB</a></li>
-                </ul>
-                <h4 style="margin-top: 1.5rem;">Downloads</h4>
-                <ul class="footer-links">
-                    <li><a href="<?php echo esc_url( get_template_directory_uri() . '/assets/pdf/WGM-WaschanleitungFlexFlockundDTFDruck.pdf' ); ?>" target="_blank">Waschanleitung Textildruck</a></li>
-                    <li><a href="<?php echo esc_url( get_template_directory_uri() . '/assets/pdf/AGBs_2025-1.pdf' ); ?>" target="_blank">AGB (PDF)</a></li>
                 </ul>
             </div>
         </div>

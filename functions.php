@@ -55,15 +55,8 @@ add_action( 'wp_enqueue_scripts', 'werbedruck_scripts' );
  */
 function werbedruck_page_templates( $templates ) {
     $templates['page-home.php']             = 'Startseite';
-    $templates['page-digitaldruck.php']     = 'Digitaldruck';
-    $templates['page-folienbeschriftung.php']     = 'Folienbeschriftung';
-    $templates['page-textilveredelung.php'] = 'Textilveredelung';
-    $templates['page-lasergravuren.php']    = 'Lasergravuren';
-    $templates['page-about.php']            = 'Über uns';
-    $templates['page-contact.php']          = 'Kontakt';
     $templates['page-impressum.php']        = 'Impressum';
     $templates['page-datenschutz.php']      = 'Datenschutz';
-    $templates['page-agb.php']               = 'AGB';
     return $templates;
 }
 add_filter( 'theme_page_templates', 'werbedruck_page_templates' );
@@ -85,42 +78,6 @@ function werbedruck_theme_activation() {
             'content'  => '',
         ),
         array(
-            'title'    => 'Digitaldruck',
-            'slug'     => 'digitaldruck',
-            'template' => 'page-digitaldruck.php',
-            'content'  => '',
-        ),
-        array(
-            'title'    => 'Folienbeschriftung',
-            'slug'     => 'folienbeschriftung',
-            'template' => 'page-folienbeschriftung.php',
-            'content'  => '',
-        ),
-        array(
-            'title'    => 'Textilveredelung',
-            'slug'     => 'textilveredelung',
-            'template' => 'page-textilveredelung.php',
-            'content'  => '',
-        ),
-        array(
-            'title'    => 'Lasergravuren',
-            'slug'     => 'lasergravuren',
-            'template' => 'page-lasergravuren.php',
-            'content'  => '',
-        ),
-        array(
-            'title'    => 'Über uns',
-            'slug'     => 'ueber-uns',
-            'template' => 'page-about.php',
-            'content'  => '',
-        ),
-        array(
-            'title'    => 'Kontakt',
-            'slug'     => 'kontakt',
-            'template' => 'page-contact.php',
-            'content'  => '',
-        ),
-        array(
             'title'    => 'Impressum',
             'slug'     => 'impressum',
             'template' => 'page-impressum.php',
@@ -132,12 +89,7 @@ function werbedruck_theme_activation() {
             'template' => 'page-datenschutz.php',
             'content'  => '',
         ),
-        array(
-            'title'    => 'AGB',
-            'slug'     => 'agb',
-            'template' => 'page-agb.php',
-            'content'  => '',
-        ),
+
     );
 
     $front_page_id = 0;
@@ -216,12 +168,8 @@ function werbedruck_theme_activation() {
         if ( ! is_wp_error( $menu_id ) ) {
             $menu_items = array(
                 'Startseite'       => 'startseite',
-                'Digitaldruck'     => 'digitaldruck',
-                'Folienbeschriftung'     => 'folienbeschriftung',
-                'Textilveredelung' => 'textilveredelung',
-                'Lasergravuren'    => 'lasergravuren',
-                'Über uns'         => 'ueber-uns',
-                'Kontakt'          => 'kontakt',
+                'Impressum'        => 'impressum',
+                'Datenschutz'      => 'datenschutz',
             );
 
             $position = 1;
@@ -288,15 +236,8 @@ function werbedruck_migrate_foliendesign() {
     // Auch alle anderen Seiten prüfen und Templates zuweisen falls sie "Standard-Template" haben
     $template_map = array(
         'startseite'       => 'page-home.php',
-        'digitaldruck'     => 'page-digitaldruck.php',
-        'folienbeschriftung' => 'page-folienbeschriftung.php',
-        'textilveredelung' => 'page-textilveredelung.php',
-        'lasergravuren'    => 'page-lasergravuren.php',
-        'ueber-uns'        => 'page-about.php',
-        'kontakt'          => 'page-contact.php',
         'impressum'        => 'page-impressum.php',
         'datenschutz'      => 'page-datenschutz.php',
-        'agb'              => 'page-agb.php',
     );
 
     foreach ( $template_map as $slug => $template ) {
